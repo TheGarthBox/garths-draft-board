@@ -1,0 +1,48 @@
+name: Deploy Draft Board
+
+on:
+  push:
+    branches: [main, staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enforce noindex on staging
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          # Belt-and-suspenders: even though index.html already has
+          # <meta name="robots" content="noindex,nofollow">, double-enforce
+          # at the server level via a static robots.txt on staging only.
+          cat > robots.txt <<'EOF'
+          User-agent: *
+          Disallow: /
+          EOF
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

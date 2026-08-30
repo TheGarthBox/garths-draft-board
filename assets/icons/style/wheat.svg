@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F8F3EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.78">
+  <!-- Weizen glass -->
+  <path d="M24 12c-2 6-2 14 0 22s2 16 0 22h16c-2-6-2-14 0-22s2-16 0-22z"/>
+  <!-- Wheat -->
+  <path d="M32 8v6M30 10l2 2 2-2M30 12l2 2 2-2"/>
+</svg>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, initial-scale=1">
+  <title>Garth's Brew Bar &mdash; On Tap</title>
+  <meta name="robots" content="noindex,nofollow">
+
+  <!--
+    CONFIGURE: paste your published Google Sheet CSV URL here.
+    File > Share > Publish to web > select your sheet > CSV > Publish > copy link.
+    The URL should look like:
+      https://docs.google.com/spreadsheets/d/e/<long-id>/pub?gid=0&single=true&output=csv
+    Leave the cachebust placeholder; board.js appends a timestamp at fetch time.
+  -->
+  <meta name="gbb-csv-url" content="https://docs.google.com/spreadsheets/d/e/2PACX-1vS2CSfyl09rkexWp67X7_5mUn7EYN2dHnDcWrihcsPDiq8CP-4VDQmpbj2NaG-wY3CPdc6So7amKSr9/pub?gid=1376251977&amp;single=true&amp;output=csv">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/board.css">
+</head>
+<body class="gbb-board">
+
+  <header class="gbb-header">
+    <span class="gbb-header-mark">Garth&rsquo;s Brew Bar</span>
+    <span class="gbb-header-sep">&mdash;</span>
+    <span class="gbb-header-eyebrow">On Tap Tonight</span>
+  </header>
+
+  <main class="gbb-grid" id="gbb-grid" aria-label="Draft list">
+    <!-- Tap rows rendered by board.js -->
+  </main>
+
+  <footer class="gbb-footer">
+    <span class="gbb-footer-left">garthsbrewbar.com</span>
+
+    <!-- Selection-philosophy scoreboard, computed live from active taps -->
+    <div class="gbb-scoreboard" id="gbb-scoreboard" aria-label="Selection philosophy tonight"></div>
+
+    <span class="gbb-footer-right">
+      <span class="gbb-footer-cta">
+        <span class="gbb-footer-cta-line1">Follow us on Instagram</span>
+        <strong class="gbb-footer-cta-line2">@garthsbrewbar</strong>
+      </span>
+      <img class="gbb-footer-qr"
+           src="assets/icons/ui/instagram-qr.svg"
+           alt="QR code linking to instagram.com/garthsbrewbar">
+    </span>
+  </footer>
+
+  <!-- Hidden status / stale indicator -->
+  <span id="gbb-status" hidden aria-live="polite"></span>
+  <div class="gbb-stale-dot" id="gbb-stale-dot" hidden title="Display showing stale data"></div>
+
+  <script src="assets/js/board.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, initial-scale=1">
+  <title>Garth's Brew Bar — On Tap (Preview)</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/board.css">
+</head>
+<body class="gbb-board">
+
+  <header class="gbb-header">
+    <span class="gbb-header-mark">Garth&rsquo;s Brew Bar</span>
+    <span class="gbb-header-sep">&mdash;</span>
+    <span class="gbb-header-eyebrow">On Tap Tonight</span>
+  </header>
+
+  <main class="gbb-grid" id="gbb-grid" aria-label="Draft list"></main>
+
+  <footer class="gbb-footer">
+    <span class="gbb-footer-left">garthsbrewbar.com</span>
+    <div class="gbb-scoreboard" id="gbb-scoreboard" aria-label="Selection philosophy tonight"></div>
+    <span class="gbb-footer-right">
+      <span class="gbb-footer-cta">
+        <span class="gbb-footer-cta-line1">Follow us on Instagram</span>
+        <strong class="gbb-footer-cta-line2">@garthsbrewbar</strong>
+      </span>
+      <img class="gbb-footer-qr"
+           src="assets/icons/ui/instagram-qr.svg"
+           alt="QR code linking to instagram.com/garthsbrewbar">
+    </span>
+  </footer>
+
+  <span id="gbb-status" hidden aria-live="polite"></span>
+
+  <script>
+    // Offline preview: live Untappd menu snapshot, Vennture/Cha Cha names restored.
+    // No Icon URLs — board uses brewery-initial monogram fallback by default.
+    window.__GBB_INLINE_CSV__ = `Tap,Active,Brewery,Beer Name,Style,ABV,City,Pours,Status,Icon URL,Description
+1,yes,Vennture Brew,Cold Brew Coffee,Nitro Cold Brew Coffee · Non-Alcoholic,,"Madison, WI",12oz $4.50 | 16oz $5.50,active,,
+2,yes,Cha Cha Tea,Mango Black Tea,Nitro Tea · Non-Alcoholic,,"Madison, WI",12oz $4.50 | 16oz $5.50,active,,
+3,yes,The Drowned Lands,Cabin Fever,Barleywine,10,"Warwick, NY",4oz $4 | 8oz $6.50 | 32oz Crowler $22,active,,
+4,yes,New Holland,Dragon's Milk Reserve,Coffee & Chocolate Imperial Stout,11,"Holland, MI",4oz $4 | 8oz $6.50 | 32oz Crowler $22,active,,
+5,yes,G5,Productive Little Thing,Stout,4.7,"Beloit, WI",4oz $3 | 8oz $4.50 | 16oz $7.50 | 32oz Crowler $18,active,,
+6,yes,Giant Jones,Tripel,Belgian Tripel,9.1,"Madison, WI",4oz $4 | 8oz $6.50 | 16oz $9.50 | 32oz Crowler $22,active,,
+7,yes,G5,Tie the Stem,Cherry Limeaide Gluten-Free Sour,5,"Beloit, WI",4oz $4 | 8oz $6.50 | 16oz $9.50 | 32oz Crowler $22,active,,
+8,yes,Fox River,Blu Bobber (Blueberry Ale),Fruit Beer,4.5,"Oshkosh, WI",4oz $3 | 8oz $4.50 | 16oz $7.50 | 32oz Crowler $18,active,,
+9,yes,Oliphant,Rusket Red,Red Lager,5,"Somerset, WI",4oz $3 | 8oz $4.50 | 16oz $7.50 | 32oz Crowler $18,active,,
+10,yes,Explorium,Copper Lager,Vienna Lager,6,"Greendale, WI",4oz $3 | 8oz $4.50 | 16oz $7.50 | 32oz Crowler $18,active,,
+11,no,,,,,,,,,
+12,yes,Oliphant,Honees Honees,Peanut Butter & Honey Golden Ale,5.6,"Somerset, WI",4oz $3 | 8oz $4.50 | 16oz $7.50 | 32oz Crowler $18,active,,
+13,yes,Odell,Peach Stand Rambler,Blonde Ale,5,"Fort Collins, CO",4oz $3 | 8oz $4.50 | 16oz $7.50 | 32oz Crowler $18,active,,
+14,yes,Phase Three,Pixel Populus,Double New England Hazy IPA,8,"Lake Zurich, IL",4oz $4 | 8oz $6.50 | 16oz $9.50 | 32oz Crowler $22,active,,
+15,yes,Phase Three,Pixel,New England Hazy IPA,6.5,"Lake Zurich, IL",4oz $3.50 | 8oz $5.50 | 16oz $8.50 | 32oz Crowler $20,active,,
+16,yes,Phase Three,Pixel Demoliri,Double New England Hazy IPA,8,"Lake Zurich, IL",4oz $4 | 8oz $6.50 | 16oz $9.50 | 32oz Crowler $22,active,,
+17,yes,Phase Three,Pixel In the Machine,Double New England Hazy IPA,8,"Lake Zurich, IL",4oz $4 | 8oz $6.50 | 16oz $9.50 | 32oz Crowler $22,active,,
+18,yes,Phase Three,P3 Polotmavý,Czech Amber,4.7,"Lake Zurich, IL",16oz Side-Pull Pour $8,active,,`;
+  </script>
+  <script>
+    window.fetch = function () {
+      return Promise.resolve({
+        ok: true,
+        text: function () { return Promise.resolve(window.__GBB_INLINE_CSV__); }
+      });
+    };
+    var meta = document.createElement('meta');
+    meta.name = 'gbb-csv-url';
+    meta.content = 'inline://preview';
+    document.head.appendChild(meta);
+  </script>
+  <script src="assets/js/board.js"></script>
+</body>
+</html>

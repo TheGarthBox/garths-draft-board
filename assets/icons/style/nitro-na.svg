@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F8F3EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+  <!-- Mug body -->
+  <path d="M20 18h22v32a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z"/>
+  <!-- Handle -->
+  <path d="M42 26h4a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-4"/>
+  <!-- Cascading nitro lines -->
+  <path d="M25 25h12" opacity="0.6"/>
+  <path d="M25 31h12" opacity="0.5"/>
+  <path d="M25 37h12" opacity="0.4"/>
+</svg>

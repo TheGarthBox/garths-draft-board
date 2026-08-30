@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editors
+.vscode/
+.idea/
+
+# Local notes / drafts not meant for prod
+notes/
+*.local.md
+
+# Test artifacts
+test-output/
+*.log
+
+# Build artifacts / distributables
+*.zip
+zixIFsAo

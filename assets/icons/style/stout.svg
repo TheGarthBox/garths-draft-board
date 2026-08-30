@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F8F3EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+  <!-- Snifter -->
+  <path d="M22 14c0 12 4 18 10 18s10-6 10-18z"/>
+  <path d="M32 32v18"/>
+  <path d="M24 50h16"/>
+  <!-- Fill -->
+  <path d="M24 22c0 8 3 12 8 12s8-4 8-12" stroke-opacity="0.4"/>
+</svg>

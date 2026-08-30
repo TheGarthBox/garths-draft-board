@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draft Board &mdash; Admin</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/board.css">
+  <style>
+    html, body {
+      width: auto;
+      height: auto;
+      min-height: 100vh;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body class="gbb-admin">
+  <h1>Garth&rsquo;s Draft Board</h1>
+  <p class="gbb-admin-sub">
+    Use this page to confirm an edit pushed through. Tap <strong>Refresh now</strong>
+    after you save a row in the Sheet &mdash; the bar &amp; community TVs will pick it
+    up automatically within 60 seconds, but this lets you preview here first.
+  </p>
+
+  <button id="gbb-refresh" type="button">Refresh now</button>
+
+  <div class="gbb-admin-status" id="gbb-admin-status">Idle.</div>
+  <div class="gbb-admin-meta" id="gbb-admin-meta">Last successful fetch: never</div>
+
+  <script>
+    // Tiny inline controller for the admin page.
+    // Loads the same renderer logic but in a hidden test mode, then exposes its state.
+    (function () {
+      var statusEl = document.getElementById('gbb-admin-status');
+      var metaEl   = document.getElementById('gbb-admin-meta');
+      var btn      = document.getElementById('gbb-refresh');
+
+      function setStatus(msg) { statusEl.textContent = msg; }
+      function setMeta(d) {
+        metaEl.textContent = 'Last successful fetch: ' +
+          (d ? d.toLocaleString() : 'never');
+      }
+
+      // Lazy-load the board.js module so we get the same fetch + parse logic.
+      // We render into a hidden DOM so the page itself just shows status.
+      var hidden = document.createElement('div');
+      hidden.id = 'gbb-grid';
+      hidden.style.display = 'none';
+      document.body.appendChild(hidden);
+
+      var meta = document.createElement('meta');
+      meta.name = 'gbb-csv-url';
+      // Inherit CSV URL from the same <meta> source used by index.html.
+      // To keep configuration in one place, paste it both here AND in index.html,
+      // OR pass ?csv= in the URL once during setup.
+      meta.content = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS2CSfyl09rkexWp67X7_5mUn7EYN2dHnDcWrihcsPDiq8CP-4VDQmpbj2NaG-wY3CPdc6So7amKSr9/pub?gid=1376251977&single=true&output=csv';
+      document.head.appendChild(meta);
+
+      var script = document.createElement('script');
+      script.src = 'assets/js/board.js';
+      script.onload = function () {
+        setStatus('Ready. Tap "Refresh now" to test the connection.');
+      };
+      script.onerror = function () {
+        setStatus('Could not load board.js. Check the file is deployed.');
+      };
+      document.body.appendChild(script);
+
+      btn.addEventListener('click', function () {
+        setStatus('Refreshing&hellip;');
+        if (!window.GBB || !window.GBB.refresh) {
+          setStatus('Renderer not ready yet. Wait a moment and try again.');
+          return;
+        }
+        window.GBB.refresh().then(function () {
+          var d = window.GBB.getLastSuccessAt();
+          if (d) {
+            setStatus('Success. The TVs will catch up within ~60 seconds.');
+            setMeta(d);
+          } else {
+            setStatus('Refresh attempted, but no data returned. Check the Sheet is published to web.');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

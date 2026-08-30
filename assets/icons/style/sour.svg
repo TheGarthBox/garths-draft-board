@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F8F3EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+  <!-- Glass -->
+  <path d="M22 16h20l-2 36a2 2 0 0 1-2 2H26a2 2 0 0 1-2-2z"/>
+  <!-- Lemon wedge -->
+  <path d="M40 16c2-2 6-3 8-1-2 4-5 6-8 5z"/>
+  <path d="M42 16l4 0M44 14l1 3"/>
+</svg>

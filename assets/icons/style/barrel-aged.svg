@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F8F3EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+  <!-- Barrel -->
+  <ellipse cx="32" cy="14" rx="14" ry="4"/>
+  <ellipse cx="32" cy="50" rx="14" ry="4"/>
+  <path d="M18 14c-2 12-2 24 0 36"/>
+  <path d="M46 14c2 12 2 24 0 36"/>
+  <path d="M22 13c-1 13-1 25 0 38"/>
+  <path d="M42 13c1 13 1 25 0 38"/>
+  <!-- Hoops -->
+  <path d="M19 26c8 2 18 2 26 0" opacity="0.6"/>
+  <path d="M19 38c8 2 18 2 26 0" opacity="0.6"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F8F3EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+  <!-- Slim can -->
+  <rect x="24" y="12" width="16" height="40" rx="2"/>
+  <path d="M24 18h16"/>
+  <!-- Bubbles -->
+  <circle cx="29" cy="28" r="1.4" fill="#F8F3EA" stroke="none"/>
+  <circle cx="35" cy="32" r="1.2" fill="#F8F3EA" stroke="none"/>
+  <circle cx="30" cy="38" r="1.6" fill="#F8F3EA" stroke="none"/>
+  <circle cx="36" cy="44" r="1.2" fill="#F8F3EA" stroke="none"/>
+</svg>
