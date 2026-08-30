@@ -120,7 +120,7 @@ html, body {
 
 .gbb-tap {
   display: grid;
-  grid-template-columns: 3.4vw 4.6vw 1fr;
+  grid-template-columns: 3.4vw 1fr;
   gap: 0.9vw;
   padding: 0 0 0 0.9vw;
   border-left: 4px solid var(--gbb-gray);
@@ -153,8 +153,11 @@ html, body {
 .gbb-tier-wisconsin .gbb-tap-numwrap { color: var(--gbb-tier-wisconsin-text); opacity: 0.85; }
 .gbb-tier-us-craft  .gbb-tap-numwrap { color: var(--gbb-tier-us-text); opacity: 0.85; }
 
-/* Icon / monogram */
+/* Icon / monogram — HIDDEN (v1.1: text-only board).
+   To restore: delete the `display: none` line below and put
+   `4.6vw` back as the middle column in .gbb-tap grid-template-columns. */
 .gbb-tap-icon {
+  display: none;
   width: 4.6vw;
   height: 4.6vw;
   border-radius: 50%;
