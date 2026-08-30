@@ -153,11 +153,8 @@ html, body {
 .gbb-tier-wisconsin .gbb-tap-numwrap { color: var(--gbb-tier-wisconsin-text); opacity: 0.85; }
 .gbb-tier-us-craft  .gbb-tap-numwrap { color: var(--gbb-tier-us-text); opacity: 0.85; }
 
-/* Icon / monogram — HIDDEN (v1.1: text-only board).
-   To restore: delete the `display: none` line below and put
-   `4.6vw` back as the middle column in .gbb-tap grid-template-columns. */
+/* Icon / monogram */
 .gbb-tap-icon {
-  display: none;
   width: 4.6vw;
   height: 4.6vw;
   border-radius: 50%;
@@ -491,3 +488,11 @@ html, body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+/* ---------------- v1.1 — TEXT-ONLY BOARD ----------------
+   Hides the brewery monogram circles. Placed at END of file
+   deliberately: the .gbb-tap-icon rule above sets display:flex,
+   so this override must come after it to win the cascade.
+   TO RESTORE THE CIRCLES: delete this block AND restore the
+   middle 4.6vw column in .gbb-tap grid-template-columns. */
+.gbb-tap-icon { display: none; }
