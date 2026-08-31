@@ -496,3 +496,46 @@ html, body {
    TO RESTORE THE CIRCLES: delete this block AND restore the
    middle 4.6vw column in .gbb-tap grid-template-columns. */
 .gbb-tap-icon { display: none; }
+
+/* ---------------- v1.4 - KIOSK / FIRE TV ----------------
+   Silk reserves space for its own URL bar, so a 100vh page is
+   taller than the visible area - that's why the board scrolled
+   and why the nav only hid after scrolling. kiosk.js measures the
+   real visible height into --gbb-vh; we pin to that so there is
+   nothing to scroll. Falls back to 100vh if kiosk.js is absent. */
+html, body {
+  height: var(--gbb-vh, 100vh);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+.gbb-board {
+  height: var(--gbb-vh, 100vh);
+}
+
+/* One-press overlay: fullscreen + wake lock both need a user gesture. */
+.gbb-kiosk-prompt {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 10, 9, 0.92);
+  cursor: pointer;
+  font-family: 'Lora', Georgia, serif;
+  text-align: center;
+}
+.gbb-kiosk-inner { padding: 2vw 4vw; }
+.gbb-kiosk-head {
+  font-size: 3vw;
+  font-weight: 600;
+  color: var(--gbb-amber);
+  letter-spacing: 0.04em;
+}
+.gbb-kiosk-sub {
+  margin-top: 1.4vh;
+  font-size: 1.3vw;
+  color: var(--gbb-fg-soft);
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.02em;
+}
