@@ -26,20 +26,28 @@
 /* --- 2. Tier stripe carries more weight now the number is neutral --- */
 .gbb-tap { border-left-width: 6px; }
 
-/* --- 3. Type up, line heights pinned --- */
+/* --- 3. Type up, line spacing down to pay for it ---
+   Measured on the real 1920x1080 target: the type bump alone left
+   0.2px of headroom per row, and each row clips its overflow, so
+   the price line would have lost its descenders on the TV while
+   looking fine on a laptop. The font sizes stay up; the room comes
+   out of leading and the gap between lines instead. ~14px of
+   headroom per row at 1080p. */
+.gbb-tap-body { gap: 0.12vh; }
+
 .gbb-tap-heading {
   font-size: 1.78vw;
-  line-height: 1.12;
+  line-height: 1.05;
 }
 
 .gbb-tap-meta {
   font-size: 1.22vw;
-  line-height: 1.25;
+  line-height: 1.12;
 }
 
 .gbb-tap-pours {
   font-size: 1.26vw;
-  line-height: 1.25;
+  line-height: 1.12;
 }
 
 /* --- 4. Wordmark, bottom left --- */
