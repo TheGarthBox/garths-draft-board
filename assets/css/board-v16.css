@@ -1,0 +1,61 @@
+/* ============================================================
+   Garth's Brew Bar — Draft Board · v1.6 legibility overrides
+
+   Loaded AFTER board.css in index.html. Kept in its own file so
+   the 600-line base sheet never has to be hand-edited in a
+   browser again — every rule here is an override, and source
+   order is the only thing making it win.
+   ============================================================ */
+
+:root {
+  /* was #E3B852 — lighter, but it hazed out at 12 feet */
+  --gbb-tier-wisconsin-text: #D8A32B;
+  --gbb-tier-wisconsin-bg:   rgba(216, 163, 43, 0.12);
+}
+
+/* --- 1. Tap numbers: one colour, always --- */
+.gbb-tap-numwrap,
+.gbb-tier-madison   .gbb-tap-numwrap,
+.gbb-tier-wisconsin .gbb-tap-numwrap,
+.gbb-tier-us-craft  .gbb-tap-numwrap {
+  color: var(--gbb-fg);
+  opacity: 1;
+  font-size: 2.25vw;
+}
+
+/* --- 2. Tier stripe carries more weight now the number is neutral --- */
+.gbb-tap { border-left-width: 6px; }
+
+/* --- 3. Type up, line heights pinned --- */
+.gbb-tap-heading {
+  font-size: 1.78vw;
+  line-height: 1.12;
+}
+
+.gbb-tap-meta {
+  font-size: 1.22vw;
+  line-height: 1.25;
+}
+
+.gbb-tap-pours {
+  font-size: 1.26vw;
+  line-height: 1.25;
+}
+
+/* --- 4. Wordmark, bottom left --- */
+.gbb-footer-left {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.32vw;
+  font-weight: 700;
+  color: var(--gbb-fg);
+  letter-spacing: 0.01em;
+}
+
+/* --- 5. The header used to hold the top row off the bezel. It's gone,
+       so the grid buys that space back itself. TVs overscan; the first
+       beer should not sit on the edge of the panel. --- */
+.gbb-grid { padding: 1.4vh 0 0.4vh; }
+
+/* --- 6. Header bar off. Markup stays in index.html so this is a
+       one-line decision, reversible from the stylesheet alone. --- */
+.gbb-header { display: none; }
