@@ -20,40 +20,42 @@
 .gbb-tier-us-craft  .gbb-tap-numwrap {
   color: var(--gbb-fg);
   opacity: 1;
-  font-size: 2.25vw;
+  font-size: min(2.25vw, 3.70vh);
 }
 
 /* --- 2. Tier stripe carries more weight now the number is neutral --- */
 .gbb-tap { border-left-width: 6px; }
 
-/* --- 3. Type up, line spacing down to pay for it ---
-   Measured on the real 1920x1080 target: the type bump alone left
-   0.2px of headroom per row, and each row clips its overflow, so
-   the price line would have lost its descenders on the TV while
-   looking fine on a laptop. The font sizes stay up; the room comes
-   out of leading and the gap between lines instead. ~14px of
-   headroom per row at 1080p. */
+/* --- 3. Type up, and made to FIT rather than to measure ---
+   Every size here is min(Xvw, Yvh). vw alone sizes text off screen
+   WIDTH while the row budget is set by screen HEIGHT, so on a panel
+   wider than 16:9 the type outgrew its row - and .gbb-tap clips its
+   overflow, so the price line quietly lost its descenders instead
+   of wrapping. The vh term is a ceiling: on the 1920x1080 TVs the
+   vw value wins and you get the full size; on anything shorter the
+   board shrinks to fit instead of cropping. Leading is tightened
+   too, so the extra size comes out of whitespace, not the prices. */
 .gbb-tap-body { gap: 0.12vh; }
 
 .gbb-tap-heading {
-  font-size: 1.78vw;
+  font-size: min(1.78vw, 2.92vh);
   line-height: 1.05;
 }
 
 .gbb-tap-meta {
-  font-size: 1.22vw;
+  font-size: min(1.22vw, 2.00vh);
   line-height: 1.12;
 }
 
 .gbb-tap-pours {
-  font-size: 1.26vw;
+  font-size: min(1.26vw, 2.07vh);
   line-height: 1.12;
 }
 
 /* --- 4. Wordmark, bottom left --- */
 .gbb-footer-left {
   font-family: 'Lora', Georgia, serif;
-  font-size: 1.32vw;
+  font-size: min(1.32vw, 2.18vh);
   font-weight: 700;
   color: var(--gbb-fg);
   letter-spacing: 0.01em;
