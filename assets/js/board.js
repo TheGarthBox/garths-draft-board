@@ -29,6 +29,9 @@
        Every setting converged on the correct final value in 4000/4000. */
     confirmationsRequired: 5,
     maxFailuresBeforeStaleDot: 5,
+    /* Evidence for a candidate is forgotten if it hasn't been seen for
+       this long - an edit that got undone shouldn't fire later. */
+    candidateTtlMs: 4 * 60 * 1000,
     csvUrl: ''
   };
 
@@ -38,6 +41,7 @@
   var lastSuccessAt = null;
   var renderedCsv = null;        // what's currently on screen
   var candidateCsv = null;       // a change we've seen but not yet trusted
+  var candidateSeen = Object.create(null); // csv -> { n, lastSeen }
   var candidateCount = 0;        // consecutive polls agreeing on candidateCsv
 
   /* ---------- Config read ---------- */
@@ -320,6 +324,45 @@
     if (el) el.textContent = msg || '';
   }
 
+  function pruneCandidates() {
+    var cutoff = Date.now() - CFG.candidateTtlMs;
+    for (var k in candidateSeen) {
+      if (candidateSeen[k].lastSeen < cutoff) delete candidateSeen[k];
+    }
+  }
+
+  /* Is 'incoming' just 'current' with some fields gone blank?
+
+     Google publishes the sheet from several edges and some snapshots
+     catch a VLOOKUP before it has recalculated, so the same row arrives
+     with an empty ABV instead of "5". Measured 2026-10-24: twenty
+     consecutive fetches, every one carrying the correct beer, payload
+     alternating 3313/3314 bytes on exactly that one field.
+
+     Raw-string comparison treated those as two different documents, so
+     the confirmation counter reset on every flip and could never reach
+     five. Replayed against that exact alternation, the old rule redrew
+     ZERO times in 60 polls - the board would have shown the previous
+     beer forever while every fetch reported healthy.
+
+     A response that only LOSES information is noise. Ignore it. */
+  function isDegraded(incoming, current) {
+    if (!incoming || !current || incoming.length !== current.length) return false;
+    var sawBlanked = false;
+    for (var i = 0; i < current.length; i++) {
+      var a = incoming[i], b = current[i];
+      if (!a || !b) return false;
+      for (var k in b) {
+        var nv = a[k] == null ? '' : String(a[k]);
+        var ov = b[k] == null ? '' : String(b[k]);
+        if (nv === ov) continue;
+        if (nv === '' && ov !== '') { sawBlanked = true; continue; }
+        return false;
+      }
+    }
+    return sawBlanked;
+  }
+
   /* ---------- Poll ---------- */
   /* force = true bypasses the confirmation window and renders whatever came
      back right now. Used by the "Refresh now" button on admin.html. */
@@ -340,28 +383,38 @@
           return;
         }
 
-        // Identical to what's on screen: nothing to do, drop any candidate.
+        /* Identical to what's on screen. Note we do NOT clear the tally:
+           wiping evidence every time an edge serves the old copy is half
+           of what let a real change stall indefinitely. */
         if (csv === renderedCsv) {
-          candidateCsv = null;
-          candidateCount = 0;
+          pruneCandidates();
           return;
         }
 
-        // Different from screen. Count how many polls in a row agree on it.
-        if (csv === candidateCsv) {
-          candidateCount += 1;
-        } else {
-          candidateCsv = csv;
-          candidateCount = 1;
+        // A snapshot that only lost a field to a lagging formula: ignore.
+        if (isDegraded(parseCsv(csv), parseCsv(renderedCsv))) {
+          return;
         }
 
-        if (candidateCount >= CFG.confirmationsRequired) {
+        /* Count TOTAL sightings rather than a run of consecutive ones, so
+           an alternating feed converges instead of resetting to 1. */
+        var rec = candidateSeen[csv];
+        if (!rec) { rec = candidateSeen[csv] = { n: 0, lastSeen: 0 }; }
+        rec.n += 1;
+        rec.lastSeen = Date.now();
+        pruneCandidates();
+
+        candidateCsv = csv;
+        candidateCount = rec.n;
+
+        if (rec.n >= CFG.confirmationsRequired) {
           renderedCsv = csv;
+          candidateSeen = Object.create(null);
           candidateCsv = null;
           candidateCount = 0;
           render(parseCsv(csv));
         }
-        // else: hold the current board. Flapping edge caches cannot move it.
+        // else: hold. One stale response still cannot move the board.
       })
       .catch(function (err) {
         consecutiveFailures += 1;
