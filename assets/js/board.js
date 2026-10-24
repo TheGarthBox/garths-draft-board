@@ -13,7 +13,7 @@
 
   /* ---------- Config ---------- */
   var CFG = {
-    pollIntervalMs: 30 * 1000,
+    pollIntervalMs: 12 * 1000,
     /* Google serves the published CSV from multiple edge caches that do NOT
        update in lockstep. For several minutes after a Sheet edit, identical
        requests can return old OR new content at random. Rendering every
