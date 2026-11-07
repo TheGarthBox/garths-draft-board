@@ -1,5 +1,5 @@
 /* ============================================================
-   Garth's Brew Bar — Draft Board · watchdog (v1.8)
+   Garth's Brew Bar — Draft Board · watchdog (v2.0)
 
    THE PROBLEM THIS SOLVES
 
@@ -76,7 +76,13 @@
   function reloadIfOnline(reason) {
     var meta = document.querySelector('meta[name="gbb-csv-url"]');
     if (!meta || !meta.content) { reload(reason + ' (no csv url)'); return; }
-    fetch(meta.content + '&wd=' + Date.now(), { cache: 'no-store' })
+    /* v2.0: request the CANONICAL url, no unique param. Same reason as
+       fetchCsv() in board.js - a unique query string is a CDN cache miss,
+       so it never revalidates the object the board actually reads. The
+       reload above keeps its ?wd= because that one is defeating Silk's
+       HTML cache, which IS the right tool there. Two caches, opposite
+       treatment. */
+    fetch(meta.content, { cache: 'no-store' })
       .then(function (r) { if (r && r.ok) reload(reason); })
       .catch(function () { /* still down - leave the menu readable */ });
   }

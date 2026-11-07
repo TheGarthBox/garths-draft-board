@@ -1,8 +1,8 @@
 /* ============================================================
-   Garth's Brew Bar — Draft Board renderer (v2).
+   Garth's Brew Bar — Draft Board renderer (v2.0).
    - Vanilla JS, IIFE, no deps.
    - Targets Fire TV Silk + modern Chromium.
-   - Polls the published CSV every 60s, swaps DOM in place
+   - Polls the published CSV every 12s, swaps DOM in place
      (no reload, no flash) so the board never blanks for guests.
    - v2 adds: brewery monogram fallback, tier-colored brewery name,
      selection-philosophy scoreboard in footer.
@@ -55,14 +55,44 @@
     } catch (e) { /* older browsers */ }
   }
 
-  /* ---------- Fetch ---------- */
+  /* ---------- Fetch ----------
+
+     v2.0 - REMOVED the per-request `cachebust=<timestamp>` parameter.
+
+     That parameter was mine, it was well-intentioned, and it was the
+     cause of the staleness it was written to prevent.
+
+     There are two caches between this board and the spreadsheet, and
+     they need OPPOSITE treatment:
+
+       1. The BROWSER's own cache. Defeated by `cache: 'no-store'`
+          below. That is the correct and sufficient tool for it.
+
+       2. Google's CDN, which serves the published CSV from many edge
+          nodes. This one must NOT be defeated - it must be ASKED TO
+          REVALIDATE.
+
+     A unique query string makes every poll a brand-new object as far as
+     the CDN is concerned. Nothing is ever warm, nothing ever revalidates
+     against the canonical copy, and each request lands on whatever node
+     answers first - which may be holding a snapshot from an hour ago.
+     That is the cold-node lottery, and it explains the alternating
+     3313/3314-byte payloads logged on 2026-10-24.
+
+     `cache: 'no-store'` sends `Cache-Control: no-cache` upstream, which
+     asks intermediaries to check with the origin rather than serve blind.
+     Requesting the CANONICAL url is what keeps that one object fresh -
+     and as a side effect every screen in the bar now warms the cache for
+     every other screen, instead of each rolling its own dice.
+
+     Evidence, 2026-11-07: board stale 5+ minutes after a sheet edit; one
+     plain GET of this url from outside the bar; board current within one
+     poll. Second occurrence of the same pattern.                      */
   function fetchCsv() {
     if (!CFG.csvUrl) {
       return Promise.reject(new Error('CSV URL not configured'));
     }
-    var sep = CFG.csvUrl.indexOf('?') >= 0 ? '&' : '?';
-    var bustUrl = CFG.csvUrl + sep + 'cachebust=' + Date.now();
-    return fetch(bustUrl, { cache: 'no-store' })
+    return fetch(CFG.csvUrl, { cache: 'no-store' })
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.text();
