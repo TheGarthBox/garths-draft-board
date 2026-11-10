@@ -1,11 +1,14 @@
 /* ============================================================
-   Garth's Brew Bar — Draft Board renderer (v2.0).
+   Garth's Brew Bar — Draft Board renderer (v2.1).
    - Vanilla JS, IIFE, no deps.
    - Targets Fire TV Silk + modern Chromium.
    - Polls the published CSV every 12s, swaps DOM in place
      (no reload, no flash) so the board never blanks for guests.
    - v2 adds: brewery monogram fallback, tier-colored brewery name,
      selection-philosophy scoreboard in footer.
+   - v2.0: dropped the per-request cachebust param. See fetchCsv() - that
+     param was the cause of the long-running staleness, not Google.
+   - v2.1: redraw quorum 5 -> 3 (~24s faster) now the feed is coherent.
    ============================================================ */
 
 (function () {
@@ -19,15 +22,35 @@
        requests can return old OR new content at random. Rendering every
        response makes rows flicker in and out - verified 2026-08-31.
        So: a CHANGE must be confirmed this many polls in a row before we
-       redraw. 5 x 30s = 2.5 minutes of agreement. A lone stale response can
-       never move the board.
+       redraw. At the current 12s poll, 3 x 12s = 36s of agreement. A lone
+       stale response can never move the board.
        Simulated against a 50/50 flapping feed, 4000 trials:
          3 confirmations -> 9.8% chance of visible flicker
          4               -> 1.3%
          5               -> 0.1%   <- chosen
          6               -> 0.0%   (costs another 30s)
-       Every setting converged on the correct final value in 4000/4000. */
-    confirmationsRequired: 5,
+       Every setting converged on the correct final value in 4000/4000.
+
+       UPDATE (v2.1, 2026-11-09): 5 -> 3. The simulation above was run
+       against a feed that flapped BECAUSE of the cachebust bug removed in
+       v2.0 - so its 9.8% figure for 3 confirmations describes conditions
+       that no longer exist. Post-fix evidence: two measured keg changes,
+       a beer swap reflected in just under 2 min and a status->Kicked in
+       about 3.5 min, and in BOTH cases the board got there by itself -
+       which is exactly what it never did before. 5 was buying very little.
+       Saves ~24s on every change.
+
+       Garth chose 3 over 2 knowingly: two agreeing reads is thin enough
+       that a formula caught mid-recalculation could repeat itself and get
+       drawn, and a wrong price on the wall of a Cicerone-led bar costs
+       more than 12 seconds does.
+
+       Poll interval left at 12s ON PURPOSE. One variable at a time is the
+       discipline that found the cachebust bug after two wrong diagnoses.
+       If 36s still feels slow, the remaining ~60-90s is Google's republish
+       lag, and the only way at that is the live-read restructure in
+       ROOT-CAUSE-stale-board.md. Measure before building it. */
+    confirmationsRequired: 3,
     maxFailuresBeforeStaleDot: 5,
     /* Evidence for a candidate is forgotten if it hasn't been seen for
        this long - an edit that got undone shouldn't fire later. */
