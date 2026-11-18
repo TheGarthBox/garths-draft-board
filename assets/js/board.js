@@ -9,6 +9,9 @@
    - v2.0: dropped the per-request cachebust param. See fetchCsv() - that
      param was the cause of the long-running staleness, not Google.
    - v2.1: redraw quorum 5 -> 3 (~24s faster) now the feed is coherent.
+   - v2.2: the board can no longer go BACKWARDS. The Taps tab carries a
+     "Last Edited" stamp; any snapshot older than the one on screen is
+     ignored outright. See "Snapshot ordering" below.
    ============================================================ */
 
 (function () {
@@ -55,6 +58,11 @@
     /* Evidence for a candidate is forgotten if it hasn't been seen for
        this long - an edit that got undone shouldn't fire later. */
     candidateTtlMs: 4 * 60 * 1000,
+    /* v2.2: header of the Taps-tab column holding the sheet's last-edit
+       time, written by =TEXT(NOW(),"yyyy-mm-dd hh:mm:ss"). Only the first
+       non-empty cell in the column is read. If the column is missing or
+       blank the board behaves exactly as v2.1 did. */
+    stampHeader: 'Last Edited',
     csvUrl: ''
   };
 
@@ -62,10 +70,14 @@
   var consecutiveFailures = 0;
   var renderState = new Map();   // tapNumber -> <article>
   var lastSuccessAt = null;
-  var renderedCsv = null;        // what's currently on screen
-  var candidateCsv = null;       // a change we've seen but not yet trusted
-  var candidateSeen = Object.create(null); // csv -> { n, lastSeen }
-  var candidateCount = 0;        // consecutive polls agreeing on candidateCsv
+  var renderedKey = null;        // content now on screen (stamp excluded)
+  var renderedRows = null;       // the same, parsed - for isDegraded()
+  var renderedStamp = null;      // newest "Last Edited" seen for that content
+  var candidateKey = null;       // a change we've seen but not yet trusted
+  var candidateSeen = Object.create(null); // key -> { n, lastSeen, stamp }
+  var candidateCount = 0;        // sightings of candidateKey so far
+  var olderIgnored = 0;          // v2.2: stale snapshots refused since load
+  var lastOlderAt = null;
 
   /* ---------- Config read ---------- */
   function readConfig() {
@@ -384,6 +396,93 @@
     }
   }
 
+  /* ---------- Snapshot ordering (v2.2) ----------
+
+     THE BUG THIS FIXES (18 Nov 2026)
+
+     Garth swapped tap 12 from Working Draft Le Pils to Central Waters
+     Honey Blonde. The board picked it up, then a few minutes later put
+     Le Pils BACK - while the sheet still said Honey Blonde.
+
+     After every edit Google's edges disagree for a few minutes: some
+     serve the new snapshot, some the old one. (Measured that afternoon:
+     the feed was still alternating between two versions of tap 12 three
+     minutes after an edit.) The quorum above counts sightings of ANY
+     snapshot that differs from the screen. It has no idea which one is
+     newer. So once the new beer was drawn, the old snapshot was simply
+     "a change" - and three sightings of it in four minutes redrew it.
+     The quorum stops one stray response from moving the board. It never
+     stopped three of them from moving it backwards.
+
+     THE FIX
+
+     The Taps tab now publishes a "Last Edited" stamp
+     (=TEXT(NOW(),"yyyy-mm-dd hh:mm:ss")). It recalculates as part of the
+     same edit that changes the beer, so a snapshot's stamp says how old
+     its content is. The rule:
+
+       older stamp than what's on screen  -> ignored. Never counted.
+       same or newer                      -> the v2.1 quorum, unchanged.
+
+     A stale edge can still DELAY a change. It can no longer UNDO one.
+
+     The stamp is left out of the content comparison on purpose. If it
+     were in, a Kegs-tab bookkeeping edit (new stamp, same beers) would
+     look like a change to the menu, and if Google ever re-rendered the
+     stamp on its own every snapshot would look unique and no change
+     could ever collect three sightings.
+
+     The format sorts as plain text, so comparison is a string compare.
+     Anything blank or malformed is "unknown" and vetoes nothing - a
+     missing column puts the board back on exact v2.1 behaviour.        */
+  var STAMP_RE = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/;
+
+  function readStamp(rows) {
+    for (var i = 0; i < rows.length; i++) {
+      var v = (rows[i][CFG.stampHeader] || '').trim();
+      if (v) return STAMP_RE.test(v) ? v : null;
+    }
+    return null;
+  }
+
+  function isOlder(a, b) {   // true only when BOTH are known and a < b
+    return !!(a && b && a < b);
+  }
+
+  function newest(a, b) {
+    if (!a) return b || null;
+    if (!b) return a;
+    return a > b ? a : b;
+  }
+
+  function snapshot(csv) {
+    var rows = parseCsv(csv);
+    var stamp = readStamp(rows);
+    var clean = rows.map(function (r) {
+      var o = {};
+      for (var k in r) { if (k !== CFG.stampHeader) o[k] = r[k]; }
+      return o;
+    });
+    return { rows: clean, key: JSON.stringify(clean), stamp: stamp };
+  }
+
+  /* Once something newer is on screen, evidence for older snapshots is
+     worthless. Drop it so it can't fire later. */
+  function dropOlderCandidates() {
+    for (var k in candidateSeen) {
+      if (isOlder(candidateSeen[k].stamp, renderedStamp)) delete candidateSeen[k];
+    }
+  }
+
+  function draw(snap) {
+    renderedKey = snap.key;
+    renderedRows = snap.rows;
+    candidateSeen = Object.create(null);
+    candidateKey = null;
+    candidateCount = 0;
+    render(snap.rows);
+  }
+
   /* Is 'incoming' just 'current' with some fields gone blank?
 
      Google publishes the sheet from several edges and some snapshots
@@ -427,45 +526,60 @@
         setStaleDot(false);
         logStatus('');
 
+        var snap = snapshot(csv);
+
         // First successful load, or a forced refresh: draw immediately.
-        if (renderedCsv === null || force === true) {
-          renderedCsv = csv;
-          candidateCsv = null;
-          candidateCount = 0;
-          render(parseCsv(csv));
+        if (renderedKey === null || force === true) {
+          renderedStamp = snap.stamp;
+          draw(snap);
           return;
         }
 
-        /* Identical to what's on screen. Note we do NOT clear the tally:
+        /* v2.2: older than what's on screen - a lagging edge. Refuse it
+           before it can be counted. This is the line that stops the
+           board going backwards. */
+        if (isOlder(snap.stamp, renderedStamp)) {
+          olderIgnored += 1;
+          lastOlderAt = new Date();
+          pruneCandidates();
+          return;
+        }
+
+        /* Same content as the screen. Note we do NOT clear the tally:
            wiping evidence every time an edge serves the old copy is half
-           of what let a real change stall indefinitely. */
-        if (csv === renderedCsv) {
+           of what let a real change stall indefinitely. A newer stamp on
+           the same content (a Kegs-tab edit, say) still raises the bar
+           that older snapshots have to clear. */
+        if (snap.key === renderedKey) {
+          var bumped = newest(renderedStamp, snap.stamp);
+          if (bumped !== renderedStamp) {
+            renderedStamp = bumped;
+            dropOlderCandidates();
+          }
           pruneCandidates();
           return;
         }
 
         // A snapshot that only lost a field to a lagging formula: ignore.
-        if (isDegraded(parseCsv(csv), parseCsv(renderedCsv))) {
+        if (isDegraded(snap.rows, renderedRows)) {
           return;
         }
 
         /* Count TOTAL sightings rather than a run of consecutive ones, so
            an alternating feed converges instead of resetting to 1. */
-        var rec = candidateSeen[csv];
-        if (!rec) { rec = candidateSeen[csv] = { n: 0, lastSeen: 0 }; }
+        var rec = candidateSeen[snap.key];
+        if (!rec) { rec = candidateSeen[snap.key] = { n: 0, lastSeen: 0, stamp: null }; }
         rec.n += 1;
         rec.lastSeen = Date.now();
+        rec.stamp = newest(rec.stamp, snap.stamp);
         pruneCandidates();
 
-        candidateCsv = csv;
+        candidateKey = snap.key;
         candidateCount = rec.n;
 
         if (rec.n >= CFG.confirmationsRequired) {
-          renderedCsv = csv;
-          candidateSeen = Object.create(null);
-          candidateCsv = null;
-          candidateCount = 0;
-          render(parseCsv(csv));
+          renderedStamp = newest(renderedStamp, rec.stamp);
+          draw(snap);
         }
         // else: hold. One stale response still cannot move the board.
       })
@@ -484,7 +598,18 @@
   window.GBB = window.GBB || {};
   window.GBB.refresh = function () { return poll(true); };  // admin button: show me now
   window.GBB.getPendingChange = function () {
-    return candidateCsv ? { confirmations: candidateCount, needed: CFG.confirmationsRequired } : null;
+    return candidateKey ? { confirmations: candidateCount, needed: CFG.confirmationsRequired } : null;
+  };
+  /* v2.2 - from the Silk console: GBB.status() */
+  window.GBB.status = function () {
+    return {
+      version: '2.2',
+      sheetLastEdited: renderedStamp,      // stamp of what's on screen
+      olderSnapshotsIgnored: olderIgnored, // stale edges refused since load
+      lastOlderIgnoredAt: lastOlderAt,
+      pendingChange: window.GBB.getPendingChange(),
+      lastSuccessAt: lastSuccessAt
+    };
   };
   window.GBB.getLastSuccessAt = function () { return lastSuccessAt; };
   window.GBB.config = CFG;
