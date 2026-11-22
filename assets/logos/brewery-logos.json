@@ -1,0 +1,3212 @@
+{
+  "about": "Brewery logo library for the Garth's Brew Bar draft board. One entry per brewery. group 'draft' = on the Kegs tab or poured on draft since Jun 2025, named as typed on the Kegs tab; group 'menu history' = everything else ever on the Untappd menu (draft or cooler), named as on Untappd. When two names collide, 'draft' entries win. Files live in breweries/, untouched originals in originals/.",
+  "version": "202611202",
+  "updated": "2026-11-20",
+  "breweries": [
+    {
+      "name": "2nd Shift",
+      "file": "2nd-shift.png",
+      "aliases": [
+        "2nd Shift Brewing"
+      ],
+      "untappd_name": "2nd Shift Brewing",
+      "untappd_brewery_id": 2476,
+      "city": "Saint Louis, MO",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "3 Sheeps",
+      "file": "3-sheeps.png",
+      "aliases": [
+        "Three Sheeps",
+        "3 Sheeps Brewing"
+      ],
+      "untappd_name": "3 Sheeps Brewing Company",
+      "untappd_brewery_id": 27118,
+      "city": "Sheboygan, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "56 Brewing",
+      "file": "56-brewing.png",
+      "aliases": [
+        "56.0",
+        "56"
+      ],
+      "untappd_name": "56 Brewing",
+      "untappd_brewery_id": 195038,
+      "city": "Minneapolis, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "903 Brewers",
+      "file": "903-brewers.png",
+      "aliases": [
+        "903.0",
+        "903"
+      ],
+      "untappd_name": "903 Brewers",
+      "untappd_brewery_id": 45007,
+      "city": "Sherman, TX",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Abomination",
+      "file": "abomination.png",
+      "aliases": [
+        "Abomination Brewing"
+      ],
+      "untappd_name": "Abomination Brewing Company",
+      "untappd_brewery_id": 117272,
+      "city": "North Haven, CT",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Alaskan",
+      "file": "alaskan.png",
+      "aliases": [
+        "Alaskan Brewing"
+      ],
+      "untappd_name": "Alaskan Brewing Co.",
+      "untappd_brewery_id": 17,
+      "city": "Juneau, AK",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Allagash",
+      "file": "allagash.png",
+      "aliases": [
+        "Allagash Brewing"
+      ],
+      "untappd_name": "Allagash Brewing Company",
+      "untappd_brewery_id": 24,
+      "city": "Portland, ME",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Amorphic",
+      "file": "amorphic.png",
+      "aliases": [
+        "Amorphic Beer"
+      ],
+      "untappd_name": "Amorphic Beer",
+      "untappd_brewery_id": 501854,
+      "city": "Milwaukee, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Badger State",
+      "file": "badger-state.png",
+      "aliases": [
+        "Badger State Brewing"
+      ],
+      "untappd_name": "Badger State Brewing",
+      "untappd_brewery_id": 92095,
+      "city": "Green Bay, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Bavarian Bierhaus",
+      "file": "bavarian-bierhaus.png",
+      "aliases": [],
+      "untappd_name": "Bavarian Bierhaus",
+      "untappd_brewery_id": 268209,
+      "city": "Glendale, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Big Grove",
+      "file": "big-grove.png",
+      "aliases": [
+        "Big Grove Brewery"
+      ],
+      "untappd_name": "Big Grove Brewery",
+      "untappd_brewery_id": 79489,
+      "city": "Iowa City, IA",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Blacklist",
+      "file": "blacklist.png",
+      "aliases": [
+        "Blacklist Artisan Ales"
+      ],
+      "untappd_name": "Blacklist Brewing Co.",
+      "untappd_brewery_id": 56273,
+      "city": "Duluth, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Blackrocks",
+      "file": "blackrocks.png",
+      "aliases": [
+        "Blackrocks Brewery"
+      ],
+      "untappd_name": "Blackrocks Brewery",
+      "untappd_brewery_id": 9793,
+      "city": "Marquette, MI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Blackstack",
+      "file": "blackstack.png",
+      "aliases": [
+        "Blackstack Brewing"
+      ],
+      "untappd_name": "BlackStack Brewing",
+      "untappd_brewery_id": 330418,
+      "city": "Saint Paul, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Brooklyn",
+      "file": "brooklyn.png",
+      "aliases": [
+        "Brooklyn Brewery"
+      ],
+      "untappd_name": "Brooklyn Brewery",
+      "untappd_brewery_id": 259,
+      "city": "Brooklyn, NY",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Central Waters",
+      "file": "central-waters.png",
+      "aliases": [
+        "Central Waters Brewing"
+      ],
+      "untappd_name": "Central Waters Brewing Company",
+      "untappd_brewery_id": 358,
+      "city": "Amherst, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Cha Cha Tea",
+      "file": "cha-cha-tea.png",
+      "aliases": [],
+      "untappd_name": "Cha Cha Tea",
+      "untappd_brewery_id": null,
+      "city": "Madison, WI",
+      "group": "draft",
+      "source": "untappd-for-business upload",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Cocoon",
+      "file": "cocoon.png",
+      "aliases": [
+        "Cocoon Brewing"
+      ],
+      "untappd_name": "Cocoon Brewing Co.",
+      "untappd_brewery_id": 530316,
+      "city": "De Pere, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "DCBC",
+      "file": "dcbc.png",
+      "aliases": [
+        "Door County",
+        "Door County Brewing",
+        "Door County Brewing Co"
+      ],
+      "untappd_name": "Door County Brewing Co.",
+      "untappd_brewery_id": 67609,
+      "city": "Baileys Harbor, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Destihl",
+      "file": "destihl.png",
+      "aliases": [
+        "DESTIHL"
+      ],
+      "untappd_name": "DESTIHL Brewery",
+      "untappd_brewery_id": 6597,
+      "city": "Normal, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Dimensional",
+      "file": "dimensional.png",
+      "aliases": [
+        "Dimensional Brewing"
+      ],
+      "untappd_name": "Dimensional Brewing Company",
+      "untappd_brewery_id": 386637,
+      "city": "Dubuque, IA",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Dovetail",
+      "file": "dovetail.png",
+      "aliases": [
+        "Dovetail Brewery"
+      ],
+      "untappd_name": "Dovetail Brewery",
+      "untappd_brewery_id": 272842,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Drekker",
+      "file": "drekker.png",
+      "aliases": [
+        "Drekker Brewing"
+      ],
+      "untappd_name": "Drekker Brewing Company",
+      "untappd_brewery_id": 161976,
+      "city": "Fargo, ND",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Drowned Lands",
+      "file": "drowned-lands.png",
+      "aliases": [],
+      "untappd_name": "The Drowned Lands Brewery",
+      "untappd_brewery_id": 459686,
+      "city": "Warwick, NY",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Earth Rider",
+      "file": "earth-rider.png",
+      "aliases": [
+        "Earth Rider Brewery"
+      ],
+      "untappd_name": "Earth Rider Brewery",
+      "untappd_brewery_id": 366459,
+      "city": "Superior, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Elm Creek",
+      "file": "elm-creek.png",
+      "aliases": [],
+      "untappd_name": "Elm Creek Brewing Co.",
+      "untappd_brewery_id": 468331,
+      "city": "Champlin, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Fair State",
+      "file": "fair-state.png",
+      "aliases": [
+        "Fairstate",
+        "FairState",
+        "Fair State Brewing Cooperative"
+      ],
+      "untappd_name": "Fair State Brewing Cooperative",
+      "untappd_brewery_id": 97223,
+      "city": "Saint Paul, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Forbidden Root",
+      "file": "forbidden-root.png",
+      "aliases": [
+        "Forbidden Roots"
+      ],
+      "untappd_name": "Forbidden Root Brewing Company",
+      "untappd_brewery_id": 73159,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Fox River",
+      "file": "fox-river.png",
+      "aliases": [
+        "Fox River Brewing"
+      ],
+      "untappd_name": "Fox River Brewing Company",
+      "untappd_brewery_id": 4486,
+      "city": "Oshkosh, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "G Five",
+      "file": "g-five.png",
+      "aliases": [
+        "G5",
+        "G5 Brewing"
+      ],
+      "untappd_name": "G5 Brewing Company",
+      "untappd_brewery_id": 429105,
+      "city": "Beloit, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Giant Jones",
+      "file": "giant-jones.png",
+      "aliases": [
+        "Giant Jones Brewing"
+      ],
+      "untappd_name": "Giant Jones Brewing Company",
+      "untappd_brewery_id": 391047,
+      "city": "Madison, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Great Lakes",
+      "file": "great-lakes.png",
+      "aliases": [
+        "Greak Lakes",
+        "Great Lakes Brewing"
+      ],
+      "untappd_name": "Great Lakes Brewing Company",
+      "untappd_brewery_id": 3125,
+      "city": "Cleveland, OH",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hacienda",
+      "file": "hacienda.png",
+      "aliases": [
+        "Hacienda Beer Co"
+      ],
+      "untappd_name": "Hacienda Beer Co.",
+      "untappd_brewery_id": 380698,
+      "city": "Baileys Harbor, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Half Acre",
+      "file": "half-acre.png",
+      "aliases": [
+        "Half Acre Beer"
+      ],
+      "untappd_name": "Half Acre Beer Company",
+      "untappd_brewery_id": 1862,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hidden Hand",
+      "file": "hidden-hand.png",
+      "aliases": [
+        "Hidden Hand Brewing"
+      ],
+      "untappd_name": "Hidden Hand",
+      "untappd_brewery_id": 495719,
+      "city": "Naperville, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hinterland",
+      "file": "hinterland.png",
+      "aliases": [
+        "Hinterland Brewery"
+      ],
+      "untappd_name": "Hinterland Brewery",
+      "untappd_brewery_id": 608,
+      "city": "Green Bay, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hopewell",
+      "file": "hopewell.png",
+      "aliases": [
+        "Hopewell Brewing"
+      ],
+      "untappd_name": "Hopewell Brewing Co.",
+      "untappd_brewery_id": 249686,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Humble Forager",
+      "file": "humble-forager.png",
+      "aliases": [
+        "Humble Forager Brewery"
+      ],
+      "untappd_name": "Humble Forager Brewery",
+      "untappd_brewery_id": 443008,
+      "city": "Eau Claire, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Indeed",
+      "file": "indeed.png",
+      "aliases": [
+        "Indeed Brewing"
+      ],
+      "untappd_name": "Indeed Brewing Company",
+      "untappd_brewery_id": 30021,
+      "city": "Minneapolis, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Jester King",
+      "file": "jester-king.png",
+      "aliases": [],
+      "untappd_name": "Jester King Brewery",
+      "untappd_brewery_id": 5291,
+      "city": "Austin, TX",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Maplewood",
+      "file": "maplewood.png",
+      "aliases": [
+        "Maplewood Brewery"
+      ],
+      "untappd_name": "Maplewood Brewing Company",
+      "untappd_brewery_id": 60837,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Martin House",
+      "file": "martin-house.png",
+      "aliases": [
+        "Martin House Brewing"
+      ],
+      "untappd_name": "Martin House Brewing Company",
+      "untappd_brewery_id": 27621,
+      "city": "Fort Worth, TX",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "McFleshman",
+      "file": "mcfleshman.png",
+      "aliases": [
+        "McFleshman's",
+        "Mcfleshmans",
+        "McFleshmans",
+        "McFleshman's Brewing"
+      ],
+      "untappd_name": "McFleshman's Brewing Company",
+      "untappd_brewery_id": 392904,
+      "city": "Appleton, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Mikerphone",
+      "file": "mikerphone.png",
+      "aliases": [
+        "Mikerphone Brewing"
+      ],
+      "untappd_name": "Mikerphone Brewing",
+      "untappd_brewery_id": 13417,
+      "city": "Elk Grove Village, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Modist",
+      "file": "modist.png",
+      "aliases": [
+        "Modist Brewing"
+      ],
+      "untappd_name": "Modist Brewing Co.",
+      "untappd_brewery_id": 263036,
+      "city": "Minneapolis, MN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Monkless",
+      "file": "monkless.png",
+      "aliases": [
+        "Monkless Belgian Ales"
+      ],
+      "untappd_name": "Monkless Belgian Ales",
+      "untappd_brewery_id": 171137,
+      "city": "Bend, OR",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "More",
+      "file": "more.png",
+      "aliases": [
+        "More Brewing"
+      ],
+      "untappd_name": "More Brewing Company",
+      "untappd_brewery_id": 288862,
+      "city": "Huntley, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Mortalis",
+      "file": "mortalis.png",
+      "aliases": [
+        "Mortalis Brewing"
+      ],
+      "untappd_name": "Mortalis Brewing Company",
+      "untappd_brewery_id": 332604,
+      "city": "Avon, NY",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "New Holland",
+      "file": "new-holland.png",
+      "aliases": [
+        "New Holland Brewing"
+      ],
+      "untappd_name": "New Holland Brewing",
+      "untappd_brewery_id": 908,
+      "city": "Holland, MI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Noble Roots",
+      "file": "noble-roots.png",
+      "aliases": [
+        "Nobel Roots",
+        "Noble Roots Brewing"
+      ],
+      "untappd_name": "Noble Roots Brewing Company",
+      "untappd_brewery_id": 247849,
+      "city": "Green Bay, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Noon Whistle",
+      "file": "noon-whistle.png",
+      "aliases": [
+        "Noon Whistle Brewing"
+      ],
+      "untappd_name": "Noon Whistle Brewing",
+      "untappd_brewery_id": 161104,
+      "city": "Naperville, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "North Pillar",
+      "file": "north-pillar.png",
+      "aliases": [
+        "North Pillar Brewing"
+      ],
+      "untappd_name": "North Pillar Brewing Co",
+      "untappd_brewery_id": 554533,
+      "city": "Waukesha, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Odell",
+      "file": "odell.png",
+      "aliases": [
+        "Odell Brewing"
+      ],
+      "untappd_name": "Odell Brewing Co.",
+      "untappd_brewery_id": 7296,
+      "city": "Fort Collins, CO",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Offshoot",
+      "file": "offshoot.png",
+      "aliases": [
+        "Offshoot Beer Co"
+      ],
+      "untappd_name": "Offshoot Beer Co.",
+      "untappd_brewery_id": 332940,
+      "city": "Placentia, CA",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Old Irving",
+      "file": "old-irving.png",
+      "aliases": [
+        "Old Irving Brewing"
+      ],
+      "untappd_name": "Old Irving Brewing Co.",
+      "untappd_brewery_id": 266436,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Oliphant",
+      "file": "oliphant.png",
+      "aliases": [
+        "Oliphant Brewing"
+      ],
+      "untappd_name": "Oliphant Brewing",
+      "untappd_brewery_id": 116301,
+      "city": "Somerset, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "One Barrel",
+      "file": "one-barrel.png",
+      "aliases": [
+        "One Barrel Brewing"
+      ],
+      "untappd_name": "One Barrel Brewing Company",
+      "untappd_brewery_id": 33800,
+      "city": "Madison, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Ope!",
+      "file": "ope.png",
+      "aliases": [
+        "Ope",
+        "OPE!",
+        "Ope! Brewing"
+      ],
+      "untappd_name": "Ope! Brewing Co.",
+      "untappd_brewery_id": 487930,
+      "city": "Milwaukee, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "OSO",
+      "file": "oso.png",
+      "aliases": [
+        "Oso",
+        "OSO Brewing"
+      ],
+      "untappd_name": "O'so Brewing Company",
+      "untappd_brewery_id": 2029,
+      "city": "Plover, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Perennial",
+      "file": "perennial.png",
+      "aliases": [
+        "Perrennial Artisan",
+        "Perennial Artisan Ales"
+      ],
+      "untappd_name": "Perennial Artisan Ales",
+      "untappd_brewery_id": 3533,
+      "city": "St Louis, MO",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Phase Three",
+      "file": "phase-three.png",
+      "aliases": [
+        "Phase 3",
+        "Phase Three Brewing"
+      ],
+      "untappd_name": "Phase Three Brewing",
+      "untappd_brewery_id": 424986,
+      "city": "Lake Zurich, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Pipeworks",
+      "file": "pipeworks.png",
+      "aliases": [
+        "Pipeworks Brewing"
+      ],
+      "untappd_name": "Pipeworks Brewing Company",
+      "untappd_brewery_id": 4012,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Raised Grain",
+      "file": "raised-grain.png",
+      "aliases": [
+        "Raised Grain Brewing"
+      ],
+      "untappd_name": "Raised Grain Brewing Company",
+      "untappd_brewery_id": 194834,
+      "city": "Waukesha, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Revolution",
+      "file": "revolution.png",
+      "aliases": [
+        "Revolution Brewing"
+      ],
+      "untappd_name": "Revolution Brewing",
+      "untappd_brewery_id": 2605,
+      "city": "Chicago, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Rhinegeist",
+      "file": "rhinegeist.png",
+      "aliases": [],
+      "untappd_name": "Rhinegeist Brewery",
+      "untappd_brewery_id": 69953,
+      "city": "Cincinnati, OH",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Sketchbook",
+      "file": "sketchbook.png",
+      "aliases": [
+        "Sketchbook Brewing"
+      ],
+      "untappd_name": "Sketchbook Brewing Co.",
+      "untappd_brewery_id": 112494,
+      "city": "Evanston, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Supermoon",
+      "file": "supermoon.png",
+      "aliases": [
+        "Supermoon Beer"
+      ],
+      "untappd_name": "Supermoon Beer Company",
+      "untappd_brewery_id": 428216,
+      "city": "Milwaukee, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Brewing Projekt",
+      "file": "the-brewing-projekt.png",
+      "aliases": [
+        "Brewing Projekt"
+      ],
+      "untappd_name": "The Brewing Projekt",
+      "untappd_brewery_id": 200133,
+      "city": "Eau Claire, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Bruery",
+      "file": "the-bruery.png",
+      "aliases": [
+        "Bruery"
+      ],
+      "untappd_name": "The Bruery",
+      "untappd_brewery_id": 1246,
+      "city": "Placentia, CA",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Explorium BrewPub",
+      "file": "the-explorium-brewpub.png",
+      "aliases": [
+        "Explorium",
+        "The Explorium"
+      ],
+      "untappd_name": "Explorium",
+      "untappd_brewery_id": 322081,
+      "city": "Greendale, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Third Space",
+      "file": "third-space.png",
+      "aliases": [
+        "Third Space Brewing"
+      ],
+      "untappd_name": "Third Space Brewing",
+      "untappd_brewery_id": 295398,
+      "city": "Milwaukee, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Titletown",
+      "file": "titletown.png",
+      "aliases": [
+        "Titletown Brewing"
+      ],
+      "untappd_name": "Titletown Brewing Company",
+      "untappd_brewery_id": 1268,
+      "city": "Green Bay, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Toppling Goliath",
+      "file": "toppling-goliath.png",
+      "aliases": [],
+      "untappd_name": "Toppling Goliath Brewing Co.",
+      "untappd_brewery_id": 7532,
+      "city": "Decorah, IA",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Topsy Turvy",
+      "file": "topsy-turvy.png",
+      "aliases": [],
+      "untappd_name": "Topsy Turvy Brewery",
+      "untappd_brewery_id": 449881,
+      "city": "Lake Geneva, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Torzala",
+      "file": "torzala.png",
+      "aliases": [
+        "Torzala Brewing"
+      ],
+      "untappd_name": "Torzala Brewing Company",
+      "untappd_brewery_id": 522938,
+      "city": "Milwaukee, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Transient Artisan Ales",
+      "file": "transient-artisan-ales.png",
+      "aliases": [
+        "Transient Artisan",
+        "Transient"
+      ],
+      "untappd_name": "Transient Artisan Ales",
+      "untappd_brewery_id": 80116,
+      "city": "Bridgman, MI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Tripping Animals",
+      "file": "tripping-animals.png",
+      "aliases": [
+        "Tripping Animals Brewing"
+      ],
+      "untappd_name": "Tripping Animals Brewing Co.",
+      "untappd_brewery_id": 309155,
+      "city": "Doral, FL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Tumbled Rock",
+      "file": "tumbled-rock.png",
+      "aliases": [
+        "Tumbled Rock Brewery"
+      ],
+      "untappd_name": "Tumbled Rock Brewery & Kitchen",
+      "untappd_brewery_id": 448062,
+      "city": "Baraboo, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Tyranena",
+      "file": "tyranena.png",
+      "aliases": [
+        "Tyranena Brewing"
+      ],
+      "untappd_name": "Tyranena Brewing Co.",
+      "untappd_brewery_id": 1301,
+      "city": "Lake Mills, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Une Année",
+      "file": "une-annee.png",
+      "aliases": [
+        "Une Annee"
+      ],
+      "untappd_name": "Une Année Brewery",
+      "untappd_brewery_id": 28135,
+      "city": "Niles, IL",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Urban Artifact",
+      "file": "urban-artifact.png",
+      "aliases": [
+        "UA"
+      ],
+      "untappd_name": "Urban Artifact",
+      "untappd_brewery_id": 196317,
+      "city": "Cincinnati, OH",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Vennture Brew",
+      "file": "vennture-brew.png",
+      "aliases": [
+        "Vennture Brew Co",
+        "Vennture"
+      ],
+      "untappd_name": "Vennture Brew Co",
+      "untappd_brewery_id": 292244,
+      "city": "Milwaukee, WI",
+      "group": "draft",
+      "source": "untappd-for-business upload",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Vintage",
+      "file": "vintage.png",
+      "aliases": [
+        "Vintage Brewing"
+      ],
+      "untappd_name": "Vintage Brewing Company",
+      "untappd_brewery_id": 3756,
+      "city": "Madison, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Wiseacre",
+      "file": "wiseacre.png",
+      "aliases": [
+        "Wiseacre Brewing"
+      ],
+      "untappd_name": "Wiseacre Brewing Company",
+      "untappd_brewery_id": 78648,
+      "city": "Memphis, TN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Working Draft",
+      "file": "working-draft.png",
+      "aliases": [
+        "WOrking Draft",
+        "Working Draft Beer"
+      ],
+      "untappd_name": "Working Draft Beer Company",
+      "untappd_brewery_id": 379653,
+      "city": "Madison, WI",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Xul",
+      "file": "xul.png",
+      "aliases": [
+        "Xul Beer"
+      ],
+      "untappd_name": "Xul Beer Company",
+      "untappd_brewery_id": 426948,
+      "city": "Knoxville, TN",
+      "group": "draft",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "1840 Brewing Company",
+      "file": "1840-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "1840 Brewing Company",
+      "untappd_brewery_id": 355898,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "18th Street Brewery",
+      "file": "18th-street-brewery.png",
+      "aliases": [],
+      "untappd_name": "18th Street Brewery",
+      "untappd_brewery_id": 24697,
+      "city": "Hammond, IN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "3 Floyds Brewing",
+      "file": "3-floyds-brewing.png",
+      "aliases": [],
+      "untappd_name": "3 Floyds Brewing",
+      "untappd_brewery_id": 2470,
+      "city": "Munster, IN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "4 Hands Brewing Company",
+      "file": "4-hands-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "4 Hands Brewing Company",
+      "untappd_brewery_id": 14417,
+      "city": "St Louis, MO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "450 North Brewing Company",
+      "file": "450-north-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "450 North Brewing Company",
+      "untappd_brewery_id": 40301,
+      "city": "Columbus, IN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "608 Brewing Company",
+      "file": "608-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "608 Brewing Company",
+      "untappd_brewery_id": 228374,
+      "city": "La Crosse, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Abbaye de Leffe",
+      "file": "abbaye-de-leffe.png",
+      "aliases": [],
+      "untappd_name": "Abbaye de Leffe",
+      "untappd_brewery_id": 5,
+      "city": "Leuven, Vlaams Gewest",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Abita Brewing Company",
+      "file": "abita-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Abita Brewing Company",
+      "untappd_brewery_id": 10,
+      "city": "Abita Springs, LA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Ahnapee Brewery",
+      "file": "ahnapee-brewery.png",
+      "aliases": [],
+      "untappd_name": "Ahnapee Brewery",
+      "untappd_brewery_id": 71316,
+      "city": "Algoma, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Ale Asylum",
+      "file": "ale-asylum.png",
+      "aliases": [],
+      "untappd_name": "Ale Asylum",
+      "untappd_brewery_id": 20,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "ALT Brew",
+      "file": "alt-brew.png",
+      "aliases": [],
+      "untappd_name": "ALT Brew",
+      "untappd_brewery_id": 108867,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Angry Chair Brewing",
+      "file": "angry-chair-brewing.png",
+      "aliases": [],
+      "untappd_name": "Angry Chair Brewing",
+      "untappd_brewery_id": 56815,
+      "city": "Tampa, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Anheuser-Busch",
+      "file": "anheuser-busch.png",
+      "aliases": [],
+      "untappd_name": "Anheuser-Busch",
+      "untappd_brewery_id": 44,
+      "city": "St. Louis, MO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Artisanal Brew Works",
+      "file": "artisanal-brew-works.png",
+      "aliases": [],
+      "untappd_name": "Artisanal Brew Works",
+      "untappd_brewery_id": 255481,
+      "city": "Saratoga Springs, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Aslin Beer Company",
+      "file": "aslin-beer-company.png",
+      "aliases": [],
+      "untappd_name": "Aslin Beer Company",
+      "untappd_brewery_id": 170844,
+      "city": "Alexandria, VA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Athletic Brewing Company",
+      "file": "athletic-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Athletic Brewing Company",
+      "untappd_brewery_id": 391787,
+      "city": "Milford, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Avery Brewing Co.",
+      "file": "avery-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Avery Brewing Co.",
+      "untappd_brewery_id": 62,
+      "city": "Boulder, CO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Barn Town Brewing",
+      "file": "barn-town-brewing.png",
+      "aliases": [],
+      "untappd_name": "Barn Town Brewing",
+      "untappd_brewery_id": 237752,
+      "city": "West Des Moines, IA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Barrel + Beam",
+      "file": "barrel-beam.png",
+      "aliases": [],
+      "untappd_name": "Barrel + Beam",
+      "untappd_brewery_id": 378958,
+      "city": "Marquette, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Barrel 41 Brewing Co.",
+      "file": "barrel-41-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Barrel 41 Brewing Co.",
+      "untappd_brewery_id": 400974,
+      "city": "Neenah, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Barrier Brewing Company",
+      "file": "barrier-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Barrier Brewing Company",
+      "untappd_brewery_id": 4171,
+      "city": "Oceanside, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Bearded Iris Brewing",
+      "file": "bearded-iris-brewing.png",
+      "aliases": [],
+      "untappd_name": "Bearded Iris Brewing",
+      "untappd_brewery_id": 194785,
+      "city": "Nashville, TN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Beer Zombies Brewing Co.",
+      "file": "beer-zombies-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Beer Zombies Brewing Co.",
+      "untappd_brewery_id": 457753,
+      "city": "Las Vegas, NV",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Belching Beaver Brewery",
+      "file": "belching-beaver-brewery.png",
+      "aliases": [],
+      "untappd_name": "Belching Beaver Brewery",
+      "untappd_brewery_id": 43025,
+      "city": "Oceanside, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Bell's Brewery",
+      "file": "bell-s-brewery.png",
+      "aliases": [],
+      "untappd_name": "Bell's Brewery",
+      "untappd_brewery_id": 2507,
+      "city": "Comstock, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Bent Paddle Brewing Co.",
+      "file": "bent-paddle-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Bent Paddle Brewing Co.",
+      "untappd_brewery_id": 60721,
+      "city": "Duluth, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Black Husky Brewing",
+      "file": "black-husky-brewing.png",
+      "aliases": [],
+      "untappd_name": "Black Husky Brewing",
+      "untappd_brewery_id": 4076,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Black Rose Blending Co.",
+      "file": "black-rose-blending-co.png",
+      "aliases": [],
+      "untappd_name": "Black Rose Blending Co.",
+      "untappd_brewery_id": 479824,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Blackberry Farm Brewery",
+      "file": "blackberry-farm-brewery.png",
+      "aliases": [],
+      "untappd_name": "Blackberry Farm Brewery",
+      "untappd_brewery_id": 35122,
+      "city": "Maryville, TN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Bloomer Brewing Co.",
+      "file": "bloomer-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Bloomer Brewing Co.",
+      "untappd_brewery_id": 162274,
+      "city": "Bloomer, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Branch and Blade Brewing",
+      "file": "branch-and-blade-brewing.png",
+      "aliases": [],
+      "untappd_name": "Branch and Blade Brewing",
+      "untappd_brewery_id": 390113,
+      "city": "Keene, NH",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Brew Detroit",
+      "file": "brew-detroit.png",
+      "aliases": [],
+      "untappd_name": "Brew Detroit",
+      "untappd_brewery_id": 180944,
+      "city": "Detroit, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Brewer's Kitchen",
+      "file": "brewer-s-kitchen.png",
+      "aliases": [],
+      "untappd_name": "Brewer's Kitchen",
+      "untappd_brewery_id": 436178,
+      "city": "Chicago, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Brewery Bhavana",
+      "file": "brewery-bhavana.png",
+      "aliases": [],
+      "untappd_name": "Brewery Bhavana",
+      "untappd_brewery_id": 302928,
+      "city": "Raleigh, NC",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Broken Bat Brewing Co.",
+      "file": "broken-bat-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Broken Bat Brewing Co.",
+      "untappd_brewery_id": 333906,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Burley Oak Brewing Company",
+      "file": "burley-oak-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Burley Oak Brewing Company",
+      "untappd_brewery_id": 15646,
+      "city": "Berlin, MD",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Cascade Brewing",
+      "file": "cascade-brewing.png",
+      "aliases": [],
+      "untappd_name": "Cascade Brewing",
+      "untappd_brewery_id": 1035,
+      "city": "Portland, OR",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Cigar City Brewing",
+      "file": "cigar-city-brewing.png",
+      "aliases": [],
+      "untappd_name": "Cigar City Brewing",
+      "untappd_brewery_id": 379,
+      "city": "Tampa, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "City Lights Brewing Company",
+      "file": "city-lights-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "City Lights Brewing Company",
+      "untappd_brewery_id": 322602,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Civil Society Brewing",
+      "file": "civil-society-brewing.png",
+      "aliases": [],
+      "untappd_name": "Civil Society Brewing",
+      "untappd_brewery_id": 186509,
+      "city": "Jupiter, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Clown Shoes",
+      "file": "clown-shoes.png",
+      "aliases": [],
+      "untappd_name": "Clown Shoes",
+      "untappd_brewery_id": 7583,
+      "city": "Boston, MA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Company Values",
+      "file": "company-values.png",
+      "aliases": [],
+      "untappd_name": "Company Values",
+      "untappd_brewery_id": 482452,
+      "city": "Palmetto, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Component Brewing Company",
+      "file": "component-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Component Brewing Company",
+      "untappd_brewery_id": 395090,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Copper State Brewing Co.",
+      "file": "copper-state-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Copper State Brewing Co.",
+      "untappd_brewery_id": 324541,
+      "city": "Green Bay, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Coronado Brewing Company",
+      "file": "coronado-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Coronado Brewing Company",
+      "untappd_brewery_id": 404,
+      "city": "San Diego, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Covert Artisan Ales",
+      "file": "covert-artisan-ales.png",
+      "aliases": [],
+      "untappd_name": "Covert Artisan Ales",
+      "untappd_brewery_id": 421467,
+      "city": "Sioux Falls, SD",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Crooked Stave Brewing Co.",
+      "file": "crooked-stave-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Crooked Stave Brewing Co.",
+      "untappd_brewery_id": 10568,
+      "city": "Denver, CO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Cruz Blanca",
+      "file": "cruz-blanca.png",
+      "aliases": [],
+      "untappd_name": "Cruz Blanca",
+      "untappd_brewery_id": 267933,
+      "city": "Chicago, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Cölner Hofbräu Früh",
+      "file": "colner-hofbrau-fruh.png",
+      "aliases": [],
+      "untappd_name": "Cölner Hofbräu Früh",
+      "untappd_brewery_id": 386,
+      "city": "Cologne, Nordrhein-Westfalen",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "DCR Brewing Company",
+      "file": "dcr-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "DCR Brewing Company",
+      "untappd_brewery_id": 320765,
+      "city": "Fargo, ND",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Definitive Brewing Company",
+      "file": "definitive-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Definitive Brewing Company",
+      "untappd_brewery_id": 375047,
+      "city": "Portland, ME",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Delta Beer Lab",
+      "file": "delta-beer-lab.png",
+      "aliases": [],
+      "untappd_name": "Delta Beer Lab",
+      "untappd_brewery_id": 421705,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Deschutes Brewery",
+      "file": "deschutes-brewery.png",
+      "aliases": [],
+      "untappd_name": "Deschutes Brewery",
+      "untappd_brewery_id": 441,
+      "city": "Bend, OR",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Dogfish Head Craft Brewery",
+      "file": "dogfish-head-craft-brewery.png",
+      "aliases": [],
+      "untappd_name": "Dogfish Head Craft Brewery",
+      "untappd_brewery_id": 459,
+      "city": "Milton, DE",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Drewrys Brewing Company",
+      "file": "drewrys-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Drewrys Brewing Company",
+      "untappd_brewery_id": 83610,
+      "city": "Black River Falls, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Driftless Brewing Company",
+      "file": "driftless-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Driftless Brewing Company",
+      "untappd_brewery_id": 75470,
+      "city": "Soldiers Grove, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Eagle Park Brewing Company",
+      "file": "eagle-park-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Eagle Park Brewing Company",
+      "untappd_brewery_id": 303157,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "El Segundo Brewing Company",
+      "file": "el-segundo-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "El Segundo Brewing Company",
+      "untappd_brewery_id": 11688,
+      "city": "El Segundo, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Energy City Brewing",
+      "file": "energy-city-brewing.png",
+      "aliases": [],
+      "untappd_name": "Energy City Brewing",
+      "untappd_brewery_id": 345559,
+      "city": "Batavia, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Equilibrium Brewery",
+      "file": "equilibrium-brewery.png",
+      "aliases": [],
+      "untappd_name": "Equilibrium Brewery",
+      "untappd_brewery_id": 198789,
+      "city": "Middletown, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Evil Twin Brewing",
+      "file": "evil-twin-brewing.png",
+      "aliases": [],
+      "untappd_name": "Evil Twin Brewing",
+      "untappd_brewery_id": 3735,
+      "city": "Brooklyn, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Evil Twin Brewing NYC",
+      "file": "evil-twin-brewing-nyc.png",
+      "aliases": [],
+      "untappd_name": "Evil Twin Brewing NYC",
+      "untappd_brewery_id": 420055,
+      "city": "Ridgewood, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Fair Isle Brewing",
+      "file": "fair-isle-brewing.png",
+      "aliases": [],
+      "untappd_name": "Fair Isle Brewing",
+      "untappd_brewery_id": 455226,
+      "city": "Seattle, WA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "False Hope Brewing",
+      "file": "false-hope-brewing.png",
+      "aliases": [],
+      "untappd_name": "False Hope Brewing",
+      "untappd_brewery_id": 556152,
+      "city": "North Haven, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Fat Orange Cat Brew Co.",
+      "file": "fat-orange-cat-brew-co.png",
+      "aliases": [],
+      "untappd_name": "Fat Orange Cat Brew Co.",
+      "untappd_brewery_id": 290803,
+      "city": "North Haven, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Ferrous Falcon",
+      "file": "ferrous-falcon.png",
+      "aliases": [],
+      "untappd_name": "Ferrous Falcon",
+      "untappd_brewery_id": 477507,
+      "city": "San Marcos, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "FiftyFifty Brewing Co.",
+      "file": "fiftyfifty-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "FiftyFifty Brewing Co.",
+      "untappd_brewery_id": 520,
+      "city": "Truckee, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Firestone Walker Brewing Company",
+      "file": "firestone-walker-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Firestone Walker Brewing Company",
+      "untappd_brewery_id": 524,
+      "city": "Paso Robles, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Fonta Flora Brewery",
+      "file": "fonta-flora-brewery.png",
+      "aliases": [],
+      "untappd_name": "Fonta Flora Brewery",
+      "untappd_brewery_id": 82899,
+      "city": "Nebo, NC",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Forager Brewery",
+      "file": "forager-brewery.png",
+      "aliases": [],
+      "untappd_name": "Forager Brewery",
+      "untappd_brewery_id": 222025,
+      "city": "Rochester, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Forbidden Root Brewery - Columbus",
+      "file": "forbidden-root-brewery-columbus.png",
+      "aliases": [],
+      "untappd_name": "Forbidden Root Brewery - Columbus",
+      "untappd_brewery_id": 461557,
+      "city": "Columbus, OH",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Founders Brewing Co.",
+      "file": "founders-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Founders Brewing Co.",
+      "untappd_brewery_id": 549,
+      "city": "Grand Rapids, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Foxtown Brewing",
+      "file": "foxtown-brewing.png",
+      "aliases": [],
+      "untappd_name": "Foxtown Brewing",
+      "untappd_brewery_id": 436598,
+      "city": "Mequon, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "FREETHOUGHT",
+      "file": "freethought.png",
+      "aliases": [],
+      "untappd_name": "FREETHOUGHT",
+      "untappd_brewery_id": 419966,
+      "city": "Brooklyn, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Froth Brewing Co.",
+      "file": "froth-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Froth Brewing Co.",
+      "untappd_brewery_id": 416951,
+      "city": "Buffalo, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Full Mile Beer Co. & Kitchen",
+      "file": "full-mile-beer-co-kitchen.png",
+      "aliases": [],
+      "untappd_name": "Full Mile Beer Co. & Kitchen",
+      "untappd_brewery_id": 415692,
+      "city": "Sun Prairie, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Fulton Brewing",
+      "file": "fulton-brewing.png",
+      "aliases": [],
+      "untappd_name": "Fulton Brewing",
+      "untappd_brewery_id": 2314,
+      "city": "Minneapolis, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Funk Factory Geuzeria",
+      "file": "funk-factory-geuzeria.png",
+      "aliases": [],
+      "untappd_name": "Funk Factory Geuzeria",
+      "untappd_brewery_id": 80275,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Garage Beer",
+      "file": "garage-beer.png",
+      "aliases": [],
+      "untappd_name": "Garage Beer",
+      "untappd_brewery_id": 536162,
+      "city": "Columbus, OH",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Gathering Place Brewing Company",
+      "file": "gathering-place-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Gathering Place Brewing Company",
+      "untappd_brewery_id": 357277,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Go Brewing",
+      "file": "go-brewing.png",
+      "aliases": [],
+      "untappd_name": "Go Brewing",
+      "untappd_brewery_id": 511818,
+      "city": "Naperville, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Good City Brewing",
+      "file": "good-city-brewing.png",
+      "aliases": [],
+      "untappd_name": "Good City Brewing",
+      "untappd_brewery_id": 276419,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Good Works Brewing Co.",
+      "file": "good-works-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Good Works Brewing Co.",
+      "untappd_brewery_id": 540240,
+      "city": "Milton, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Great Dane Pub & Brewing Company",
+      "file": "great-dane-pub-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Great Dane Pub & Brewing Company",
+      "untappd_brewery_id": 8041,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Great Notion Brewing",
+      "file": "great-notion-brewing.png",
+      "aliases": [],
+      "untappd_name": "Great Notion Brewing",
+      "untappd_brewery_id": 232077,
+      "city": "Portland, OR",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Guinness",
+      "file": "guinness.png",
+      "aliases": [],
+      "untappd_name": "Guinness",
+      "untappd_brewery_id": 49,
+      "city": "Dublin, County Dublin",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Half Brothers Brewing Company",
+      "file": "half-brothers-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Half Brothers Brewing Company",
+      "untappd_brewery_id": 362501,
+      "city": "Grand Forks, ND",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Herbiery",
+      "file": "herbiery.png",
+      "aliases": [],
+      "untappd_name": "Herbiery",
+      "untappd_brewery_id": 434270,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hi-Wire Brewing",
+      "file": "hi-wire-brewing.png",
+      "aliases": [],
+      "untappd_name": "Hi-Wire Brewing",
+      "untappd_brewery_id": 64692,
+      "city": "Asheville, NC",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hidden Springs Ale Works",
+      "file": "hidden-springs-ale-works.png",
+      "aliases": [],
+      "untappd_name": "Hidden Springs Ale Works",
+      "untappd_brewery_id": 138841,
+      "city": "Tampa, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hogna Brygg",
+      "file": "hogna-brygg.png",
+      "aliases": [],
+      "untappd_name": "Hogna Brygg",
+      "untappd_brewery_id": 293993,
+      "city": "Singsås, Trøndelag",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hoof Hearted Brewing",
+      "file": "hoof-hearted-brewing.png",
+      "aliases": [],
+      "untappd_name": "Hoof Hearted Brewing",
+      "untappd_brewery_id": 32642,
+      "city": "Marengo, OH",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hoosier Brewing Co",
+      "file": "hoosier-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Hoosier Brewing Co",
+      "untappd_brewery_id": 182893,
+      "city": "Greenwood, IN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hop & Barrel Brewing",
+      "file": "hop-barrel-brewing.png",
+      "aliases": [],
+      "untappd_name": "Hop & Barrel Brewing",
+      "untappd_brewery_id": 361069,
+      "city": "Hudson, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hop Butcher For The World",
+      "file": "hop-butcher-for-the-world.png",
+      "aliases": [],
+      "untappd_name": "Hop Butcher For The World",
+      "untappd_brewery_id": 23570,
+      "city": "Chicago, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hop Haus Brewing Company",
+      "file": "hop-haus-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Hop Haus Brewing Company",
+      "untappd_brewery_id": 210663,
+      "city": "Verona, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Hubbard's Cave",
+      "file": "hubbard-s-cave.png",
+      "aliases": [],
+      "untappd_name": "Hubbard's Cave",
+      "untappd_brewery_id": 217054,
+      "city": "Niles, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Illuminated Brew Works",
+      "file": "illuminated-brew-works.png",
+      "aliases": [],
+      "untappd_name": "Illuminated Brew Works",
+      "untappd_brewery_id": 89122,
+      "city": "Chicago, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Imprint Beer Co.",
+      "file": "imprint-beer-co.png",
+      "aliases": [],
+      "untappd_name": "Imprint Beer Co.",
+      "untappd_brewery_id": 328389,
+      "city": "Hatfield, PA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Iowa Brewing Company",
+      "file": "iowa-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Iowa Brewing Company",
+      "untappd_brewery_id": 263854,
+      "city": "Cedar Rapids, IA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "J. Wakefield Brewing",
+      "file": "j-wakefield-brewing.png",
+      "aliases": [],
+      "untappd_name": "J. Wakefield Brewing",
+      "untappd_brewery_id": 45103,
+      "city": "Deerfield Beach, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Jolly Pumpkin Artisan Ales",
+      "file": "jolly-pumpkin-artisan-ales.png",
+      "aliases": [],
+      "untappd_name": "Jolly Pumpkin Artisan Ales",
+      "untappd_brewery_id": 723,
+      "city": "Dexter, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "JuneShine Hard Kombucha",
+      "file": "juneshine-hard-kombucha.png",
+      "aliases": [],
+      "untappd_name": "JuneShine Hard Kombucha",
+      "untappd_brewery_id": 395212,
+      "city": "San Diego, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Karben⁴ Brewing",
+      "file": "karben4-brewing.png",
+      "aliases": [],
+      "untappd_name": "Karben⁴ Brewing",
+      "untappd_brewery_id": 49747,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Knee Deep Brewing Company",
+      "file": "knee-deep-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Knee Deep Brewing Company",
+      "untappd_brewery_id": 2445,
+      "city": "Auburn, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Lake Louie Brewing",
+      "file": "lake-louie-brewing.png",
+      "aliases": [],
+      "untappd_name": "Lake Louie Brewing",
+      "untappd_brewery_id": 766,
+      "city": "Verona, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Lakefront Brewery",
+      "file": "lakefront-brewery.png",
+      "aliases": [],
+      "untappd_name": "Lakefront Brewery",
+      "untappd_brewery_id": 769,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Latrobe Brewing Co.",
+      "file": "latrobe-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Latrobe Brewing Co.",
+      "untappd_brewery_id": 3204,
+      "city": "Saint Louis, MO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Left Hand Brewing Company",
+      "file": "left-hand-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Left Hand Brewing Company",
+      "untappd_brewery_id": 779,
+      "city": "Longmont, CO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "LERVIG",
+      "file": "lervig.png",
+      "aliases": [],
+      "untappd_name": "LERVIG",
+      "untappd_brewery_id": 6826,
+      "city": "Stavanger, Rogaland",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Lil Beaver Brewery",
+      "file": "lil-beaver-brewery.png",
+      "aliases": [],
+      "untappd_name": "Lil Beaver Brewery",
+      "untappd_brewery_id": 69625,
+      "city": "Bloomington, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Lion's Tail Brewing Company",
+      "file": "lion-s-tail-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Lion's Tail Brewing Company",
+      "untappd_brewery_id": 236865,
+      "city": "Neenah, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Listermann Brewing Company",
+      "file": "listermann-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Listermann Brewing Company",
+      "untappd_brewery_id": 794,
+      "city": "Cincinnati, OH",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Little House Brewing Company",
+      "file": "little-house-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Little House Brewing Company",
+      "untappd_brewery_id": 368111,
+      "city": "Chester, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Logsdon Farmhouse Ales",
+      "file": "logsdon-farmhouse-ales.png",
+      "aliases": [],
+      "untappd_name": "Logsdon Farmhouse Ales",
+      "untappd_brewery_id": 12831,
+      "city": "Portland, OR",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Lua Brewing",
+      "file": "lua-brewing.png",
+      "aliases": [],
+      "untappd_name": "Lua Brewing",
+      "untappd_brewery_id": 64726,
+      "city": "Des Moines, IA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "LULZ Hard Seltzer",
+      "file": "lulz-hard-seltzer.png",
+      "aliases": [],
+      "untappd_name": "LULZ Hard Seltzer",
+      "untappd_brewery_id": 487603,
+      "city": "Lake Zurich, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Lupulin Brewing Company",
+      "file": "lupulin-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Lupulin Brewing Company",
+      "untappd_brewery_id": 194550,
+      "city": "Big Lake, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Maine Beer Company",
+      "file": "maine-beer-company.png",
+      "aliases": [],
+      "untappd_name": "Maine Beer Company",
+      "untappd_brewery_id": 2874,
+      "city": "Freeport, ME",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Mason Ale Works",
+      "file": "mason-ale-works.png",
+      "aliases": [],
+      "untappd_name": "Mason Ale Works",
+      "untappd_brewery_id": 246213,
+      "city": "San Diego, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "MIA",
+      "file": "mia.png",
+      "aliases": [],
+      "untappd_name": "MIA",
+      "untappd_brewery_id": 46754,
+      "city": "Miami, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Miller Brewing Company",
+      "file": "miller-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Miller Brewing Company",
+      "untappd_brewery_id": 863,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Milwaukee Brewing Company",
+      "file": "milwaukee-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Milwaukee Brewing Company",
+      "untappd_brewery_id": 2446,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Minocqua Brewing Company",
+      "file": "minocqua-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Minocqua Brewing Company",
+      "untappd_brewery_id": 871,
+      "city": "Minocqua, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "MobCraft Beer",
+      "file": "mobcraft-beer.png",
+      "aliases": [],
+      "untappd_name": "MobCraft Beer",
+      "untappd_brewery_id": 40537,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Modern Times Beer",
+      "file": "modern-times-beer.png",
+      "aliases": [],
+      "untappd_name": "Modern Times Beer",
+      "untappd_brewery_id": 68356,
+      "city": "San Diego, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Montucky Cold Snacks",
+      "file": "montucky-cold-snacks.png",
+      "aliases": [],
+      "untappd_name": "Montucky Cold Snacks",
+      "untappd_brewery_id": 50154,
+      "city": "Bozeman, MT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "New Barons Brewing Co-op",
+      "file": "new-barons-brewing-co-op.png",
+      "aliases": [],
+      "untappd_name": "New Barons Brewing Co-op",
+      "untappd_brewery_id": 314762,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "New Belgium Brewing Company",
+      "file": "new-belgium-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "New Belgium Brewing Company",
+      "untappd_brewery_id": 905,
+      "city": "Fort Collins, CO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Nightmare Brewing Company",
+      "file": "nightmare-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Nightmare Brewing Company",
+      "untappd_brewery_id": 412462,
+      "city": "Bay Shore, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Obscurity Brewing and Craft Mead",
+      "file": "obscurity-brewing-and-craft-mead.png",
+      "aliases": [],
+      "untappd_name": "Obscurity Brewing and Craft Mead",
+      "untappd_brewery_id": 430820,
+      "city": "Elburn, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Octopi Brewing",
+      "file": "octopi-brewing.png",
+      "aliases": [],
+      "untappd_name": "Octopi Brewing",
+      "untappd_brewery_id": 308546,
+      "city": "Waunakee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Odd Side Ales",
+      "file": "odd-side-ales.png",
+      "aliases": [],
+      "untappd_name": "Odd Side Ales",
+      "untappd_brewery_id": 5300,
+      "city": "Grand Haven, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Old Nation Brewing Co.",
+      "file": "old-nation-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Old Nation Brewing Co.",
+      "untappd_brewery_id": 208038,
+      "city": "Williamston, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Ology Brewing Co",
+      "file": "ology-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Ology Brewing Co",
+      "untappd_brewery_id": 328707,
+      "city": "Tallahassee, FL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Other Half Brewing Co.",
+      "file": "other-half-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Other Half Brewing Co.",
+      "untappd_brewery_id": 94785,
+      "city": "Brooklyn, NY",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Paperback Brewing Co.",
+      "file": "paperback-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Paperback Brewing Co.",
+      "untappd_brewery_id": 167653,
+      "city": "Glendale, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Parish Brewing Co.",
+      "file": "parish-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Parish Brewing Co.",
+      "untappd_brewery_id": 10253,
+      "city": "Broussard, LA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Penrose Brewing Company",
+      "file": "penrose-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Penrose Brewing Company",
+      "untappd_brewery_id": 63480,
+      "city": "Geneva, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Pilot Project Brewing",
+      "file": "pilot-project-brewing.png",
+      "aliases": [],
+      "untappd_name": "Pilot Project Brewing",
+      "untappd_brewery_id": 360850,
+      "city": "Chicago, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Pitchfork Brewing Company",
+      "file": "pitchfork-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Pitchfork Brewing Company",
+      "untappd_brewery_id": 46826,
+      "city": "Hudson, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Pontoon Brewing",
+      "file": "pontoon-brewing.png",
+      "aliases": [],
+      "untappd_name": "Pontoon Brewing",
+      "untappd_brewery_id": 90133,
+      "city": "Sandy Springs, GA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Potosi Brewing Company",
+      "file": "potosi-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Potosi Brewing Company",
+      "untappd_brewery_id": 16089,
+      "city": "Potosi, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Public Brewing Co",
+      "file": "public-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Public Brewing Co",
+      "untappd_brewery_id": 41060,
+      "city": "Kenosha, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "RaR Brewing",
+      "file": "rar-brewing.png",
+      "aliases": [],
+      "untappd_name": "RaR Brewing",
+      "untappd_brewery_id": 68522,
+      "city": "Cambridge, MD",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Restoration Cider Co.",
+      "file": "restoration-cider-co.png",
+      "aliases": [],
+      "untappd_name": "Restoration Cider Co.",
+      "untappd_brewery_id": 206123,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Sahale Ale Works",
+      "file": "sahale-ale-works.png",
+      "aliases": [],
+      "untappd_name": "Sahale Ale Works",
+      "untappd_brewery_id": 435436,
+      "city": "Grafton, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Scribbled Lines",
+      "file": "scribbled-lines.png",
+      "aliases": [],
+      "untappd_name": "Scribbled Lines",
+      "untappd_brewery_id": 428880,
+      "city": "Big Lake, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Short Fuse Brewing Company",
+      "file": "short-fuse-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Short Fuse Brewing Company",
+      "untappd_brewery_id": 226521,
+      "city": "Schiller Park, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Short Throw Brewing Co.",
+      "file": "short-throw-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Short Throw Brewing Co.",
+      "untappd_brewery_id": 449168,
+      "city": "North Haven, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Short's Brewing Company",
+      "file": "short-s-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Short's Brewing Company",
+      "untappd_brewery_id": 1139,
+      "city": "Elk Rapids, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Side Project Brewing",
+      "file": "side-project-brewing.png",
+      "aliases": [],
+      "untappd_name": "Side Project Brewing",
+      "untappd_brewery_id": 64810,
+      "city": "Saint Louis, MO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Skygazer Brewing Company",
+      "file": "skygazer-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Skygazer Brewing Company",
+      "untappd_brewery_id": 310900,
+      "city": "North Haven, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Smooj",
+      "file": "smooj.png",
+      "aliases": [],
+      "untappd_name": "Smooj",
+      "untappd_brewery_id": 468123,
+      "city": "Ann Arbor, MI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Solemn Oath Brewery",
+      "file": "solemn-oath-brewery.png",
+      "aliases": [],
+      "untappd_name": "Solemn Oath Brewery",
+      "untappd_brewery_id": 30200,
+      "city": "Naperville, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Southern Grist Brewing Company",
+      "file": "southern-grist-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Southern Grist Brewing Company",
+      "untappd_brewery_id": 198885,
+      "city": "Nashville, TN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Spaten-Franziskaner-Löwenbräu-Gruppe",
+      "file": "spaten-franziskaner-lowenbrau-gruppe.png",
+      "aliases": [],
+      "untappd_name": "Spaten-Franziskaner-Löwenbräu-Gruppe",
+      "untappd_brewery_id": 1176,
+      "city": "München, Bayern",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Starkweather Brewing Company",
+      "file": "starkweather-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Starkweather Brewing Company",
+      "untappd_brewery_id": 515696,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "State 48 Brewery",
+      "file": "state-48-brewery.png",
+      "aliases": [],
+      "untappd_name": "State 48 Brewery",
+      "untappd_brewery_id": 302623,
+      "city": "Surprise, AZ",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "SteelTank Brewing Co.",
+      "file": "steeltank-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "SteelTank Brewing Co.",
+      "untappd_brewery_id": 391502,
+      "city": "Oconomowoc, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Surly Brewing Company",
+      "file": "surly-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Surly Brewing Company",
+      "untappd_brewery_id": 2609,
+      "city": "Minneapolis, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "SweetWater Brewing Company",
+      "file": "sweetwater-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "SweetWater Brewing Company",
+      "untappd_brewery_id": 1224,
+      "city": "Atlanta, GA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Answer",
+      "file": "the-answer.png",
+      "aliases": [],
+      "untappd_name": "The Answer",
+      "untappd_brewery_id": 114660,
+      "city": "Richmond, VA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Cider Farm",
+      "file": "the-cider-farm.png",
+      "aliases": [],
+      "untappd_name": "The Cider Farm",
+      "untappd_brewery_id": 235550,
+      "city": "Mineral Point, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Copper Turtle Brewery & Taverne",
+      "file": "the-copper-turtle-brewery-taverne.png",
+      "aliases": [],
+      "untappd_name": "The Copper Turtle Brewery & Taverne",
+      "untappd_brewery_id": 534066,
+      "city": "Milwaukee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Fermentorium Beverage Co.",
+      "file": "the-fermentorium-beverage-co.png",
+      "aliases": [
+        "Fermentorium"
+      ],
+      "untappd_name": "The Fermentorium Beverage Co.",
+      "untappd_brewery_id": 9670,
+      "city": "Cedarburg, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Lone Girl Brewing Company",
+      "file": "the-lone-girl-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "The Lone Girl Brewing Company",
+      "untappd_brewery_id": 226573,
+      "city": "Waunakee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "The Veil Brewing Co.",
+      "file": "the-veil-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "The Veil Brewing Co.",
+      "untappd_brewery_id": 245461,
+      "city": "Richmond, VA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Third Eye Brewing Company",
+      "file": "third-eye-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Third Eye Brewing Company",
+      "untappd_brewery_id": 467597,
+      "city": "Cincinnati, OH",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Timber Ales",
+      "file": "timber-ales.png",
+      "aliases": [],
+      "untappd_name": "Timber Ales",
+      "untappd_brewery_id": 396873,
+      "city": "North Haven, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Tox Brewing Co.",
+      "file": "tox-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "Tox Brewing Co.",
+      "untappd_brewery_id": 271860,
+      "city": "New London, CT",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Trillium Brewing Company",
+      "file": "trillium-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Trillium Brewing Company",
+      "untappd_brewery_id": 23038,
+      "city": "Canton, MA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Two Brothers Brewing Company",
+      "file": "two-brothers-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Two Brothers Brewing Company",
+      "untappd_brewery_id": 1298,
+      "city": "Warrenville, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Two Pitchers Brewing Company",
+      "file": "two-pitchers-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Two Pitchers Brewing Company",
+      "untappd_brewery_id": 70943,
+      "city": "Oakland, CA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Two Villains Brewing",
+      "file": "two-villains-brewing.png",
+      "aliases": [],
+      "untappd_name": "Two Villains Brewing",
+      "untappd_brewery_id": 181742,
+      "city": "Vernon Township, NJ",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Untitled Art",
+      "file": "untitled-art.png",
+      "aliases": [],
+      "untappd_name": "Untitled Art",
+      "untappd_brewery_id": 315146,
+      "city": "Waunakee, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Upland Brewing Company",
+      "file": "upland-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Upland Brewing Company",
+      "untappd_brewery_id": 1313,
+      "city": "Bloomington, IN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Urban South Brewery",
+      "file": "urban-south-brewery.png",
+      "aliases": [],
+      "untappd_name": "Urban South Brewery",
+      "untappd_brewery_id": 239251,
+      "city": "New Orleans, LA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Urban South Brewery - HTX",
+      "file": "urban-south-brewery-htx.png",
+      "aliases": [],
+      "untappd_name": "Urban South Brewery - HTX",
+      "untappd_brewery_id": 450893,
+      "city": "Houston, TX",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Ursa Minor Brewing",
+      "file": "ursa-minor-brewing.png",
+      "aliases": [],
+      "untappd_name": "Ursa Minor Brewing",
+      "untappd_brewery_id": 407644,
+      "city": "Duluth, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Voodoo Brewing Company",
+      "file": "voodoo-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Voodoo Brewing Company",
+      "untappd_brewery_id": 1330,
+      "city": "Meadville, PA",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Warpigs Brewpub",
+      "file": "warpigs-brewpub.png",
+      "aliases": [],
+      "untappd_name": "Warpigs Brewpub",
+      "untappd_brewery_id": 186232,
+      "city": "Copenhagen, Region Hovedstaden",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "WeldWerks Brewing Co.",
+      "file": "weldwerks-brewing-co.png",
+      "aliases": [],
+      "untappd_name": "WeldWerks Brewing Co.",
+      "untappd_brewery_id": 185196,
+      "city": "Greeley, CO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "WellBeing Brewing",
+      "file": "wellbeing-brewing.png",
+      "aliases": [],
+      "untappd_name": "WellBeing Brewing",
+      "untappd_brewery_id": 371125,
+      "city": "St. Louis, MO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Whiner Beer Co.",
+      "file": "whiner-beer-co.png",
+      "aliases": [],
+      "untappd_name": "Whiner Beer Co.",
+      "untappd_brewery_id": 253750,
+      "city": "Chicago, IL",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Wild Mind Ales",
+      "file": "wild-mind-ales.png",
+      "aliases": [],
+      "untappd_name": "Wild Mind Ales",
+      "untappd_brewery_id": 240300,
+      "city": "Minneapolis, MN",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Wiley Roots Brewing Company",
+      "file": "wiley-roots-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Wiley Roots Brewing Company",
+      "untappd_brewery_id": 70376,
+      "city": "Greeley, CO",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Wisconsin Brewing Company",
+      "file": "wisconsin-brewing-company.png",
+      "aliases": [],
+      "untappd_name": "Wisconsin Brewing Company",
+      "untappd_brewery_id": 60015,
+      "city": "Verona, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    },
+    {
+      "name": "Young Blood Beer Company",
+      "file": "young-blood-beer-company.png",
+      "aliases": [],
+      "untappd_name": "Young Blood Beer Company",
+      "untappd_brewery_id": 464649,
+      "city": "Madison, WI",
+      "group": "menu history",
+      "source": "untappd brewery page",
+      "added": "2026-11-20"
+    }
+  ]
+}
