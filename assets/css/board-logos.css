@@ -1,0 +1,52 @@
+/* ============================================================
+   Garth's Brew Bar — Draft Board · v2.3 brewery logo badges
+
+   Loaded AFTER board.css and board-v16.css. Brings back the icon
+   column that v1.1 hid, as a round brewery badge.
+
+   - The logo is picked automatically from the Brewery column
+     (assets/logos/brewery-logos.js). An Icon URL typed on the
+     Taps tab still wins, for one-offs and collabs.
+   - No logo on file -> the old tier-coloured initials show
+     instead, so a new brewery never breaks the row.
+
+   TO TURN LOGOS OFF: remove this file's <link> from index.html.
+   Nothing else needs undoing.
+   ============================================================ */
+
+:root {
+  /* Badge diameter. min(vw, vh) like the v1.6 type, so a shorter
+     panel shrinks the badge instead of cropping the row. On the
+     1920x1080 TVs this is ~79px against a ~110px row. */
+  --gbb-logo-size: min(4.1vw, 7.3vh);
+}
+
+.gbb-tap {
+  grid-template-columns: 3.4vw var(--gbb-logo-size) 1fr;
+  gap: 0.85vw;
+}
+
+.gbb-tap-icon {
+  display: flex;                 /* undoes v1.1's display:none */
+  width: var(--gbb-logo-size);
+  height: var(--gbb-logo-size);
+  align-self: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #1a1614;           /* only seen behind initials */
+  border: 0;
+  /* hairline ring so cream badges don't bleed into the wall */
+  box-shadow: 0 0 0 1px rgba(244, 239, 230, 0.14);
+}
+
+.gbb-tap-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* badges are pre-padded; cover just fills */
+  display: block;
+}
+
+/* Initials fallback, resized to the badge */
+.gbb-tap-monogram {
+  font-size: min(1.32vw, 2.35vh);
+}
