@@ -269,9 +269,12 @@
     // Tap number
     setText(el.querySelector('.gbb-tap-num'), padTapNum(t.Tap));
 
-    // Icon area: explicit URL > brewery monogram
+    // Icon area: Icon URL on the sheet > brewery logo library > monogram
+    // (v2.3: logo library is assets/logos/brewery-logos.js, keyed by the
+    //  Brewery column. Missing logo -> '' -> initials, same as before.)
     var iconEl = el.querySelector('.gbb-tap-icon');
-    var iconUrl = (t['Icon URL'] || '').trim();
+    var iconUrl = (t['Icon URL'] || '').trim() ||
+      ((window.GBB_LOGOS && window.GBB_LOGOS.resolve(t.Brewery)) || '');
     if (iconUrl) {
       // Need <img>; ensure it exists
       var img = iconEl.querySelector('img');
