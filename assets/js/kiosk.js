@@ -1,5 +1,5 @@
 /* ============================================================
-   Garth's Brew Bar — Kiosk helper (v1)
+   Garth's Brew Bar — Kiosk helper (v2.4: clearer prompt after Back)
 
    Fixes two Fire TV / Silk problems that the board itself can't:
 
@@ -78,9 +78,27 @@
   overlay.setAttribute('tabindex', '0');
   overlay.innerHTML =
     '<div class="gbb-kiosk-inner">' +
-      '<div class="gbb-kiosk-head">Press OK on the remote</div>' +
-      '<div class="gbb-kiosk-sub">Goes full screen and keeps the display awake</div>' +
+      '<div class="gbb-kiosk-head"></div>' +
+      '<div class="gbb-kiosk-sub"></div>' +
     '</div>';
+
+  /* v2.4: two messages. On a Fire TV the first Back press while the
+     board is full screen only EXITS full screen; Silk keeps the page.
+     Staff read that as "Back is broken" because this prompt popped
+     straight back up. So once the board has been full screen, the
+     prompt says what happened and what Back will do next. Nothing
+     here intercepts Back: a second press goes to Silk as normal. */
+  var MESSAGES = {
+    start: ['Press OK on the remote', 'Goes full screen and keeps the display awake'],
+    off:   ['Full screen is off', 'Press OK to go back, or Back again to leave']
+  };
+  var wasFullscreen = false;
+  function setMessage(which) {
+    var m = MESSAGES[which] || MESSAGES.start;
+    overlay.querySelector('.gbb-kiosk-head').textContent = m[0];
+    overlay.querySelector('.gbb-kiosk-sub').textContent = m[1];
+  }
+  setMessage('start');
 
   function arm() {
     Promise.all([goFullscreen(), requestWakeLock()]).then(function (r) {
@@ -115,10 +133,18 @@
     mount();
   }
 
-  document.addEventListener('fullscreenchange', function () {
-    if (!isFullscreen()) mount(); else if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+  function onFullscreenChange() {
+    if (isFullscreen()) {
+      wasFullscreen = true;
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    } else {
+      setMessage(wasFullscreen ? 'off' : 'start');
+      mount();
+    }
     fitViewport();
-  });
+  }
+  document.addEventListener('fullscreenchange', onFullscreenChange);
+  document.addEventListener('webkitfullscreenchange', onFullscreenChange);
 
   /* ---------- Expose for debugging ---------- */
   window.GBBKiosk = {
